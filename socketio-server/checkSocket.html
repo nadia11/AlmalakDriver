@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <title>Check Socket.IO</title>
+</head>
+<body>
+<Button type="button" id="rideRequestorMobile" class="btn btn-success btn-sm">rideRequestorMobile</Button>
+<p id="rideRequestorMobileText"></p>
+<Button type="button" id="riderTripNumber" class="btn btn-success btn-sm">riderTripNumber</Button>
+<p id="riderTripNumberText"></p>
+
+<!-- <script src="/node_modules/socket.io-client/dist/socket.io.js"></script> -->
+<!-- <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<script>
+    $(function () {
+        var socket = io();
+        $('#rideRequestorMobile').on('click', function(){
+            socket.emit('rideRequestorMobile', {riderMobile: ''});
+		});
+        
+        socket.on('rideRequestorMobile', function(mobile){
+            $('#rideRequestorMobileText').text(mobile.riderMobile);
+        });
+		
+		
+		$('#riderTripNumber').on('click', function(){
+            socket.emit('riderTripNumber', {tripNumber: 'TRHXG8KGLZRK'});
+		});
+        
+        socket.on('riderTripNumber', function(number){
+            $('#riderTripNumberText').text(number.tripNumber);
+        });
+    });
+</script>
+</body>
+</html>
