@@ -3,12 +3,13 @@ import { StyleSheet, View, Text, Dimensions, ActivityIndicator, Image, Linking, 
 import NetInfo, { useNetInfo } from "@react-native-community/netinfo";
 
 import MapView, { PROVIDER_GOOGLE, Marker, Polyline, AnimatedRegion, Animated, MarkerAnimated } from 'react-native-maps';
-navigator.geolocation = require('@react-native-community/geolocation');
+//navigator.geolocation = require('@react-native-community/geolocation');
+import Geolocation from '@react-native-community/geolocation';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from "axios";
 import DeviceInfo from 'react-native-device-info';
 import PolyLine from '@mapbox/polyline';
-import socketIO from 'socket.io-client';
+import{ io } from 'socket.io-client';
 import * as Animatable from 'react-native-animatable';
 // import BackgroundGeolocation from '@mauron85/react-native-background-geolocation';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -99,7 +100,7 @@ export default class DriverMapScreen extends Component {
     else { granted = await checkAndroidPermissions(); }
 
     if (granted){
-      navigator.geolocation.getCurrentPosition(
+      Geolocation.getCurrentPosition(
         position => {
           this.setState({
             latitude: position.coords.latitude,
@@ -113,7 +114,7 @@ export default class DriverMapScreen extends Component {
       );
 
 	    //enableHighAccuracy: true, get more accurate location
-      this.watchId = navigator.geolocation.watchPosition(
+      this.watchId = Geolocation.watchPosition(
         position => {
           this.setState({
             latitude: position.coords.latitude,
@@ -197,7 +198,7 @@ export default class DriverMapScreen extends Component {
   }
 
   componentWillUnmount() {
-    if (this.watchId) { navigator.geolocation.clearWatch(this.watchId); }
+    if (this.watchId) { Geolocation.clearWatch(this.watchId); }
     if (this.unsubscribe != null) this.unsubscribe();
   }
 
@@ -247,7 +248,7 @@ export default class DriverMapScreen extends Component {
       });
 
       this.setState({ pointCoords, routeResponse: json });
-      this.map.fitToCoordinates(pointCoords, { edgePadding: {top: 20, bottom: 20, left: 20, right: 20}, animated: true });
+      this.map?.fitToCoordinates(pointCoords, { edgePadding: {top: 20, bottom: 20, left: 20, right: 20}, animated: true });
     } 
     catch (error) { console.error(error) }
   }
@@ -307,19 +308,19 @@ export default class DriverMapScreen extends Component {
   }
 
   findPassengers() {
-    this.socket = socketIO.connect(SOCKET_IO_URL);
-    console.log('findPassengers: true');
+    this.socket = io("https://71a6-27-147-170-201.ngrok-free.app");
+    //console.log('findPassengers: true');
     
     if (!this.state.lookingForPassengers && (this.state.tripStatus === false)) {
       this.setState({ lookingForPassengers: true });
       
       this.socket.on("connect", () => {
         this.socket.emit("passengerRequest");
-        console.log("Looking Passenger: "+this.state.lookingForPassengers);
+       // console.log("Looking Passenger: "+this.state.lookingForPassengers);
       }); //Socket Connection
 
-      this.socket.on('Request', request => {
-        //console.log(request.routeResponse);
+      this.socket.on("taxiRequest", request => {
+        console.log(request.routeResponse);
         
         this.setState({
           lookingForPassengers: false, 
@@ -329,7 +330,7 @@ export default class DriverMapScreen extends Component {
           //destinationPlaceId: request.routeResponse.geocoded_waypoints[0].place_id,
           destinationPlaceId: request.destinationPlaceId
         });
-        this.getRouteDirections(request.routeResponse.geocoded_waypoints[0].place_id);
+        this.getRouteDirections(request?.routeResponse?.geocoded_waypoints[0]?.place_id);
       });
 
       this.socket.on("cancelTripByRider", (number) => {
@@ -551,7 +552,7 @@ export default class DriverMapScreen extends Component {
             showsUserLocation={false} followsUserLocation={true} showsMyLocationButton={false} 
             loadingEnabled={true} loadingIndicatorColor="#666666" loadingBackgroundColor="#eeeeee"
             zoomEnabled={true} zoomControlEnabled={true} showsTraffic={this.state.showsTraffic}
-            showsCompass={true} rotateEnabled={false} ref={map => {this.map = map}}
+            showsCompass={true} rotateEnabled={false}   ref={ref => { this.map = ref; }}
             >
             <Polyline coordinates={this.state.pointCoords} strokeWidth={3} strokeColor="red" />
             {endMarker}

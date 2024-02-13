@@ -1,12 +1,13 @@
 import axios from "axios";
 
-const BASE_URL = __DEV__ ? 'http://52.220.93.155:3030/api/android/driver' : 'http://admin-panel.almalak.com/api/android/driver';
-const GOOGLE_API_KEY ='AIzaSyC2ShRUtuWJbz7lBH2dJ8MuLvsJk13a8S8';
-const SOCKET_IO_URL = 'http://52.220.93.155:3030/';
-const SMS_API_URL = __DEV__ ? 'http://52.220.93.155:3030/api/send-sms' : 'http://admin-panel.almalak.com/api/send-sms';
+//const BASE_URL = __DEV__ ? 'http://127.0.0.1/api/android/driver' : 'http://admin-panel.almalak.com/api/android/driver';
+const BASE_URL =  'https://9049-27-147-170-201.ngrok-free.app/api/android/driver';
+const GOOGLE_API_KEY ='AIzaSyBzzTk-gzFStNFGDfSlS-H3HENq-ZAlkyQ';
+const SOCKET_IO_URL = 'https://71a6-27-147-170-201.ngrok-free.app';
+const SMS_API_URL =  'https://072b-27-147-170-201.ngrok-free.app/api/send-sms';
 const pusher_app_key = 'YOUR PUSHER APP KEY';
 const pusher_app_cluster = 'YOUR PUSHER APP CLUSTER';
-
+//const x=1;
  
 module.exports = {
     BASE_URL,

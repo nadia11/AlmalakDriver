@@ -1,4 +1,4 @@
-import { PermissionsAndroid } from 'react-native';
+ import { PermissionsAndroid } from 'react-native';
 import SmsListener from 'react-native-android-sms-listener';
 
 class SMSReceiverClass {

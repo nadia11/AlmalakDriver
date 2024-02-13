@@ -1,7 +1,37 @@
-const express = require('express');
+// const express = require('express');
+// const app = express();
+// const server = require('http').createServer(app);
+//
+// const cors = require("cors");
+// const io = require('socket.io').listen(server,{
+//     cors: {
+//         origin: "*",  // This allows all origins. For production, specify exact origins for security.
+//     }
+// });
+const express = require("express");
 const app = express();
-const server = require('http').createServer(app);
-const io = require('socket.io').listen(server);
+const http = require("http");
+const { Server } = require("socket.io");
+const cors = require("cors");
+
+app.use(cors());
+
+const server = http.createServer(app);
+
+// const io = require('socket.io').listen(server, {
+//     cors: {
+//         origin: "*",
+//         methods: ["GET", "POST"],
+//     },
+//     pingTimeout: 30000
+// });
+const io = new Server(server,{
+        cors: {
+        origin: "*",
+        methods: ["GET", "POST"],
+    },
+    pingTimeout: 30000   }
+    );
 const PORT = 3030;
 //const SERVER_IP = '52.220.93.155';
 
@@ -38,7 +68,7 @@ db.connect(function(err) {
   });
 */
 
-
+//app.use(cors());
 app.get("/", (req, res) => { res.send('Hello World from node.js'); });
 app.get('/sub', (req, res) => { res.send('Test Sub Page from node.js'); });
 
@@ -46,11 +76,13 @@ app.get('/sub', (req, res) => { res.send('Test Sub Page from node.js'); });
 //demo url== http://159.65.139.127:3030/check-socket
 
 app.get('/chat-message', function(req, res) {
-    res.sendFile(__dirname + '/chatMessage.html');
+    //res.sendFile(__dirname + '/chatMessage.html');
+    console.log("checked");
 });
 
 app.get('/check-socket', function(req, res) {
-    res.sendFile(__dirname + '/checkSocket.html');
+    //res.sendFile(__dirname + '/checkSocket.html');
+    console.log("checked");
 });
 
 
@@ -63,7 +95,7 @@ io.on('connection', (socket) => {
     //socket.id = generateId();
     //socket.join(socket.id);
     //io.to(socket.id).emit('message', { message : 'Hello there!' }); 
-    console.log('a user connected, socket.id: ' + socket.id);
+   // console.log('a user connected, socket.id: ' + socket.id);
 	//console.log(socket.connected);
 	//console.log(socket.disconnected);
 		
@@ -75,6 +107,10 @@ io.on('connection', (socket) => {
 	socket.on('riderSentRequestToJoinTripChat', (request) => {
 		console.log("riderSentRequestToJoinTripChat room: "+request.room, "tripNumber: " + request.tripNumber);
 		io.emit('riderSentRequestToJoinTripChat', request);
+    });
+
+    socket.on('test', (data) => {
+        console.log('Test message received:', data.message);
     });
 	
 	socket.on('joinTripChat', ({ name, room, tripNumber }, callback) => {
@@ -89,7 +125,8 @@ io.on('connection', (socket) => {
 		io.to(msg.room).emit('tripMessage', msg);
     });
 
-    socket.on('disconnect', () => {
+    socket.on('disconnect', (event) => {
+        console.log(event.stack || event);
         console.log('user disconnected');
 		//socket.open();
     });
@@ -104,13 +141,13 @@ io.on('connection', (socket) => {
         taxiSocket = socket;
     });
 	
-    socket.on('taxiRequest', taxiRoute => {
+    socket.on("taxiRequest", taxiRoute => {
         passengerSocket = socket;
         console.log("Someone wants a taxi!"+taxiRoute.tripNumber);
-
-        if(taxiSocket != null) {
-            taxiSocket.emit('taxiRequest', taxiRoute);
-        }
+        io.emit('taxiRequest', taxiRoute);
+        // if(taxiSocket != null) {
+        //     taxiSocket.emit('taxiRequest', taxiRoute);
+        // }
     });
 		
     socket.on("driverLocation", driverLocation => {

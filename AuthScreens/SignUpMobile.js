@@ -47,6 +47,7 @@ export default class SignUpMobile extends Component {
     })
     .then(res => { 
       console.log("OPT to SMS: "+res.data);
+      console.log(SMS_API_URL);
       // if(sms_status_array[res.data]) { alert(sms_status_array[res.data] + " Please contact to App Provider."); }
     })
     .catch((error) => {
