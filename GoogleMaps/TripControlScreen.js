@@ -135,11 +135,11 @@ export default function TripControlArriveScreen(props){
     .then((response) => response.json())
     .then((json) => {
       if(json.status === "OK") {
-        let endDistanceValue = json.rows[0].elements[0].distance.value;
-        let endDistanceText = json.rows[0].elements[0].distance.text;
-        let endDurationValue = json.rows[0].elements[0].duration.value;
-        let endDurationText = json.rows[0].elements[0].duration.text;
-        let endDropOffLocation = json.destination_addresses[0];
+        let endDistanceValue = json.rows[0].elements[0]?.distance?.value || 0;
+        let endDistanceText = json.rows[0].elements[0]?.distance?.text || "";
+        let endDurationValue = json.rows[0].elements[0]?.duration?.value || 0;
+        let endDurationText = json.rows[0].elements[0]?.duration?.text || "";
+        let endDropOffLocation = json?.destination_addresses[0] || "";
 
         handleTakeSnapshot();
         submitCompleteTripToDatabase(endDistanceValue, endDistanceText, endDurationValue, endDurationText, endDropOffLocation);

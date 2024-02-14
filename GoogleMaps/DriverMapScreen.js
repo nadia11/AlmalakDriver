@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { StyleSheet, View, Text, Dimensions, ActivityIndicator, Image, Linking, Platform, Alert, PermissionsAndroid, ToastAndroid, ImageBackground, TouchableOpacity } from 'react-native';
 import NetInfo, { useNetInfo } from "@react-native-community/netinfo";
 
-import MapView, { PROVIDER_GOOGLE, Marker, Polyline, AnimatedRegion, Animated, MarkerAnimated } from 'react-native-maps';
+import MapView, { PROVIDER_GOOGLE, Marker, Polyline, AnimatedRegion, Animated, MarkerAnimated, Circle } from 'react-native-maps';
 //navigator.geolocation = require('@react-native-community/geolocation');
 import Geolocation from '@react-native-community/geolocation';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -255,7 +255,7 @@ export default class DriverMapScreen extends Component {
 
 
   async activeDriverStatus() {
-    // this.setState({ animating: true, driverStatus: true });
+     this.setState({ animating: true, driverStatus: true });
     this.findPassengers();
 
     await axios.post(`${BASE_URL}/change-driver-status`, {
@@ -517,7 +517,7 @@ export default class DriverMapScreen extends Component {
             <Image style={{ width: 35, height: 35, transform: [{ rotate: `${this.state.markerHeading}deg` }] }} resizeMode="contain" source={require("../assets/images/bike.png")} />
           </MarkerAnimated>
 
-          <MapView.Circle key={(this.state.latitude + this.state.longitude).toString() }
+          <Circle key={(this.state.latitude + this.state.longitude).toString() }
             center={{latitude: this.state.latitude, longitude: this.state.longitude}}
             radius={1000} zIndex={0} strokeWidth={1} strokeColor='#1a66ff' fillColor='rgba(230,238,255,0.5)'
             onRegionChangeComplete={{ latitude: this.state.latitude, longitude: this.state.longitude, latitudeDelta: this.state.latitudeDelta, longitudeDelta: this.state.longitudeDelta }}
