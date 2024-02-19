@@ -7,10 +7,10 @@ export default function TermsAndConditionsMenu({ route }) {
       <View style={styles.container}>
         <Text style={styles.title}>Terms and conditions</Text>
         <ScrollView style={styles.tcContainer} style={{width: width, paddingHorizontal: 20}}>
-          <Text style={styles.tcP}>Failure to abide by Almalak’s Terms of Service or other policies can result in temporary or permanent deactivation from the Almalak platform.</Text>
+          <Text style={styles.tcP}>Failure to abide by Uder’s Terms of Service or other policies can result in temporary or permanent deactivation from the Uder platform.</Text>
           <Text style={styles.tcP}>To ensure a safe and respectful ride, do not:</Text>
-          <Text style={styles.tcL}>{'\u2022'} Violate Almalak’s weapons policy by bringing a weapon along on a Almalak ride or on Almalak property.</Text>
-          <Text style={styles.tcL}>{'\u2022'} Violate Almalak’s age requirement, which prohibits anyone under the age of 18 from riding without an adult.</Text>
+          <Text style={styles.tcL}>{'\u2022'} Violate Uder’s weapons policy by bringing a weapon along on a Uder ride or on Uder property.</Text>
+          <Text style={styles.tcL}>{'\u2022'} Violate Uder’s age requirement, which prohibits anyone under the age of 18 from riding without an adult.</Text>
           <Text style={styles.tcL}>{'\u2022'} Transport a child without a safety seat appropriate for the child’s weight.</Text>
           <Text style={styles.tcL}>{'\u2022'} Request rides for groups that cannot fit in the specified ride type.</Text>
           <Text style={styles.tcL}>{'\u2022'} Violate road safety laws including local scooter and bike laws.</Text>
@@ -21,7 +21,7 @@ export default function TermsAndConditionsMenu({ route }) {
           <Text style={styles.tcL}>{'\u2022'} Smoke, vape, or consume alcohol during your ride.</Text>
           <Text style={styles.tcL}>{'\u2022'} Damage drivers’ or other riders’ property.</Text>
           <Text style={styles.tcL}>{'\u2022'} Engage in fraudulent behavior, including but not limited to: using a stolen phone or credit card to request a ride, coupon phishing, or manipulating reviews for ride credit.</Text>
-          <Text style={styles.tcL}>{'\u2022'} Broadcast or record in violation of state or local laws or Almalak’s recording device policy.</Text>
+          <Text style={styles.tcL}>{'\u2022'} Broadcast or record in violation of state or local laws or Uder’s recording device policy.</Text>
         </ScrollView>
       </View>
     );

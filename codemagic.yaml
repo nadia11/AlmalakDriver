@@ -9,7 +9,7 @@ workflows:
           groups:
             - google_play # <-- (Includes GCLOUD_SERVICE_ACCOUNT_CREDENTIALS <-- Put your google-services.json)
           vars:
-            PACKAGE_NAME: "com.almalakdriverapp" # <-- Put your package name here e.g. com.domain.myapp
+            PACKAGE_NAME: "com.uderdriverapp" # <-- Put your package name here e.g. com.domain.myapp
           node: v16.11.1
         scripts:
             - name: Install npm dependencies
@@ -111,7 +111,7 @@ workflows:
         # environment:
         #   ios_signing:
         #     distribution_type: app_store
-        #     bundle_identifier: com.almalakdriverapp
+        #     bundle_identifier: com.uderdriverapp
         #   vars:
         #     XCODE_WORKSPACE: "CodemagicSample.xcworkspace" # <-- Put the name of your Xcode workspace here
         #     XCODE_SCHEME: "CodemagicSample" # <-- Put the name of your Xcode scheme here

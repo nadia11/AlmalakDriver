@@ -308,7 +308,7 @@ export default class DriverMapScreen extends Component {
   }
 
   findPassengers() {
-    this.socket = io("https://71a6-27-147-170-201.ngrok-free.app");
+    this.socket = io(SOCKET_IO_URL);
     //console.log('findPassengers: true');
     
     if (!this.state.lookingForPassengers && (this.state.tripStatus === false)) {

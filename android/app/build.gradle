@@ -72,10 +72,9 @@ android {
     ndkVersion rootProject.ext.ndkVersion
 
     compileSdkVersion rootProject.ext.compileSdkVersion
-
-    namespace "com.almalakdriverapp"
+    namespace "com.uderdriverapp"
     defaultConfig {
-        applicationId "com.almalakdriverapp"
+        applicationId "com.uderdriverapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 2
