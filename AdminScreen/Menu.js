@@ -39,7 +39,7 @@ export default function MenuStackScreen() {
     <MenuStack.Navigator screenOptions={Options.APP_OPTIONS.SCREEN_OPTIONS}>
       <MenuStack.Screen name="Menu" component={MenuScreen} options={{ headerShown: false }} />
       <MenuStack.Screen name="myWallet" component={myWalletMenu} options={{ title: "My Wallet", headerRight: () => Options.APP_OPTIONS.HEADER_LOGO }} />
-      <MenuStack.Screen name="recentTransaction" component={recentTransaction} options={{ title: "Recent Transaction", headerRight: () => Options.APP_OPTIONS.HEADER_LOGO }} />
+      <MenuStack.Screen name="recentTransaction" component={recentTransaction} options={{ headerShown: false }} />
       <MenuStack.Screen name="TripSummery" component={TripSummery} options={{ title: "Trip Summery", headerRight: () => Options.APP_OPTIONS.HEADER_LOGO }} />
       <MenuStack.Screen name="manageDocuments" component={manageDocuments} options={{ title: "Management Documents", headerRight: () => Options.APP_OPTIONS.HEADER_LOGO }} />
       <MenuStack.Screen name="Coupons" component={Coupons} options={{ title: "Coupons", headerRight: () => Options.APP_OPTIONS.HEADER_LOGO }} />

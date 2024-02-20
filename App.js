@@ -78,9 +78,9 @@ const AppStackScreen = () => (
     <AppStack.Screen name="DriverMapScreen" component={DriverMapScreen} options={{ headerShown: false }} />
     <AppStack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
     <AppStack.Screen name="chatMessage" component={chatMessage} options={{ headerShown: false }} />
-    <AppStack.Screen name="InviteFriends" component={InviteFriends} options={{ headerLeft: false }} />
+    <AppStack.Screen name="InviteFriends" component={InviteFriends}  />
     <AppStack.Screen name="InviteFriendsSelectContacts" component={InviteFriendsSelectContacts} options={{ headerShown: false }} />
-    <AppStack.Screen name="driverPaymentInvoice" component={driverPaymentInvoice} options={{ title:'Payment Invoice', headerLeft: false, headerTransparent: false, headerRight: () => Options.APP_OPTIONS.HEADER_LOGO }} />
+    <AppStack.Screen name="driverPaymentInvoice" component={driverPaymentInvoice} options={{ title:'Payment Invoice', headerTransparent: false, headerRight: () => Options.APP_OPTIONS.HEADER_LOGO }} />
     <AppStack.Screen name="agentLocator" component={agentLocator} options={{headerShown: false}} />
   </AppStack.Navigator>
 );

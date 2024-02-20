@@ -351,7 +351,7 @@ export default class DriverMapScreen extends Component {
   async acceptPassengerRequest() {
     this.setState({
       summeryStatus: false,
-      passengerFound: false,
+      passengerFound: true,
       driverArrive: true,
       animating: true
     });
