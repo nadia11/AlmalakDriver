@@ -4,7 +4,7 @@ import axios from "axios";
 const BASE_URL =  'https://f73a-27-147-170-201.ngrok-free.app/api/android/driver';
 const GOOGLE_API_KEY ='AIzaSyBzzTk-gzFStNFGDfSlS-H3HENq-ZAlkyQ';
 const SOCKET_IO_URL = 'https://04ce-27-147-170-201.ngrok-free.app';
-const SMS_API_URL =  'https://072b-27-147-170-201.ngrok-free.app/api/send-sms';
+const SMS_API_URL =  'https://f73a-27-147-170-201.ngrok-free.app/api/android/rider/';
 const pusher_app_key = 'YOUR PUSHER APP KEY';
 const pusher_app_cluster = 'YOUR PUSHER APP CLUSTER';
 //const x=1;
