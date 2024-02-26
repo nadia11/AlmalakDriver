@@ -1,13 +1,3 @@
-// const express = require('express');
-// const app = express();
-// const server = require('http').createServer(app);
-//
-// const cors = require("cors");
-// const io = require('socket.io').listen(server,{
-//     cors: {
-//         origin: "*",  // This allows all origins. For production, specify exact origins for security.
-//     }
-// });
 const express = require("express");
 const app = express();
 const http = require("http");
@@ -16,15 +6,14 @@ const cors = require("cors");
 
 app.use(cors());
 
-const server = http.createServer(app);
+const server = http.createServer({
+    key: fs.readFileSync('/etc/pki/tls/certs/uderonline.key'),
+    cert: fs.readFileSync('/etc/pki/tls/certs/udertaxi_com.crt'),
+    ca: fs.readFileSync('/etc/pki/tls/certs/udertaxi_com.ca-bundle'),
 
-// const io = require('socket.io').listen(server, {
-//     cors: {
-//         origin: "*",
-//         methods: ["GET", "POST"],
-//     },
-//     pingTimeout: 30000
-// });
+    requestCert: false,
+    rejectUnauthorized: false },app);
+
 const io = new Server(server,{
         cors: {
         origin: "*",
@@ -33,47 +22,10 @@ const io = new Server(server,{
     pingTimeout: 30000   }
     );
 const PORT = 3030;
-//const SERVER_IP = '52.220.93.155';
 
-
-/*
-//MySQL npm install socket.io mysql
-const mysql = require('mysql');
-const db = mysql.createConnection({
-    connectionLimit: 100,
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'esojai-admin-panel',
-    debug: false
-})
-
-db.connect(function(err) {
-    if (err) throw err;
-    console.log("Connected!");
-
-    // var sql = "INSERT INTO customers (name, address) VALUES ('Company Inc', 'Highway 37')";
-    // db.query(sql, function (err, result) {
-    //   if (err) throw err;
-    //   console.log("1 record inserted");
-    // });
-
-    // db.query("SELECT * FROM customers", function (err, result, fields) {
-    //     if (err) throw err;
-    //     console.log(result);
-    //     console.log(result[2].address);
-    //     console.log(fields);
-    //     console.log(fields[1].name);
-    // });    
-  });
-*/
-
-//app.use(cors());
 app.get("/", (req, res) => { res.send('Hello World from node.js'); });
 app.get('/sub', (req, res) => { res.send('Test Sub Page from node.js'); });
 
-//demo url== http://159.65.139.127:3030/chat-message
-//demo url== http://159.65.139.127:3030/check-socket
 
 app.get('/chat-message', function(req, res) {
     //res.sendFile(__dirname + '/chatMessage.html');
@@ -91,13 +43,7 @@ let taxiSocket = null;
 let passengerSocket = null;
 
 io.on('connection', (socket) => {
-    //socket.broadcast.emit('hi');
-    //socket.id = generateId();
-    //socket.join(socket.id);
-    //io.to(socket.id).emit('message', { message : 'Hello there!' }); 
-   // console.log('a user connected, socket.id: ' + socket.id);
-	//console.log(socket.connected);
-	//console.log(socket.disconnected);
+
 		
 	socket.on('driverSentRequestToJoinTripChat', (request) => {
 		console.log("driverSentRequestToJoinTripChat room: "+request.room, "tripNumber: " + request.tripNumber);

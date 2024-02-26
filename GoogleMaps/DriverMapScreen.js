@@ -154,9 +154,9 @@ export default class DriverMapScreen extends Component {
               console.log('this.state.pointCoords', this.state.pointCoords[0].latitude, diff_in_meters);
   
               if(diff_in_meters <= 200) {
-                Alert.alert('Rider is in 200 meter', 'Rider is around 200 meters from your current location');
+               // Alert.alert('Rider is in 200 meter', 'Rider is around 200 meters from your current location');
               } else if(diff_in_meters <= 50) {
-                Alert.alert('Rider is almost near', 'Rider is around 50 meters from your current location');
+              //  Alert.alert('Rider is almost near', 'Rider is around 50 meters from your current location');
               }
             }
           }
