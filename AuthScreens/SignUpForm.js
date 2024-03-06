@@ -117,8 +117,8 @@ export const SignUpForm = (props) => {
       national_id: nationalId,
       referral_code: referralCode,
       referral_mobile: referralMobile,
-      user_image: 'data:image/jpeg;base64,' + uploadedImage.base64,
-      file_name: uploadedImage.fileName == undefined ? "no_image" : uploadedImage.fileName,
+      user_image: 'data:image/jpeg;base64,' + uploadedImage?.assets[0]?.base64,
+      file_name: uploadedImage?.assets[0]?.fileName === undefined ? "no_image" : uploadedImage?.assets[0]?.fileName,
     })
     .then(async response => {
       if(response.data.code === 200){

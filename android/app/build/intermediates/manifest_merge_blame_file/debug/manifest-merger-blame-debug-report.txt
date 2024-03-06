@@ -155,19 +155,19 @@
 67-->[com.google.android.gms:play-services-iid:17.0.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\d23697d3ddc319769c3d2a6565d52bbc\transformed\jetified-play-services-iid-17.0.0\AndroidManifest.xml:23:22-79
 68
 69    <uses-feature
-69-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\4fe486e3c16899c67b1f49a3e3ae28f6\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:26:5-28:35
+69-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\fcd8b9b2116a382f38af684df1c842a4\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:26:5-28:35
 70        android:glEsVersion="0x00020000"
-70-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\4fe486e3c16899c67b1f49a3e3ae28f6\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:27:9-41
+70-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\fcd8b9b2116a382f38af684df1c842a4\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:27:9-41
 71        android:required="true" />
-71-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\4fe486e3c16899c67b1f49a3e3ae28f6\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:28:9-32
+71-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\fcd8b9b2116a382f38af684df1c842a4\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:28:9-32
 72
 73    <queries>
-73-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\4fe486e3c16899c67b1f49a3e3ae28f6\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:30:5-34:15
+73-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\fcd8b9b2116a382f38af684df1c842a4\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:30:5-34:15
 74
 75        <!-- Needs to be explicitly declared on Android R+ -->
 76        <package android:name="com.google.android.apps.maps" />
-76-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\4fe486e3c16899c67b1f49a3e3ae28f6\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:9-64
-76-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\4fe486e3c16899c67b1f49a3e3ae28f6\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:18-61
+76-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\fcd8b9b2116a382f38af684df1c842a4\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:9-64
+76-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\fcd8b9b2116a382f38af684df1c842a4\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:18-61
 77    </queries> <!-- for android -->
 78    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
 79    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
@@ -569,122 +569,122 @@
 295-->[androidx.room:room-runtime:2.2.5] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\32f4dc14231a603560d048af81f18073\transformed\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
 296            android:directBootAware="true"
 296-->[androidx.room:room-runtime:2.2.5] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\32f4dc14231a603560d048af81f18073\transformed\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
-297            android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
+297            android:exported="false" />
 297-->[androidx.room:room-runtime:2.2.5] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\32f4dc14231a603560d048af81f18073\transformed\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
-298        <uses-library
-298-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\4fe486e3c16899c67b1f49a3e3ae28f6\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:39:9-41:40
-299            android:name="org.apache.http.legacy"
-299-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\4fe486e3c16899c67b1f49a3e3ae28f6\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:40:13-50
-300            android:required="false" />
-300-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\4fe486e3c16899c67b1f49a3e3ae28f6\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:41:13-37
-301
-302        <activity
-302-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\7bc2107a0f24dde54b783ba4b64ec0fd\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
-303            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-303-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\7bc2107a0f24dde54b783ba4b64ec0fd\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
-304            android:exported="false"
-304-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\7bc2107a0f24dde54b783ba4b64ec0fd\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
-305            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-305-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\7bc2107a0f24dde54b783ba4b64ec0fd\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
-306
-307        <receiver
-307-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:28:9-35:20
-308            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-308-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:29:13-78
-309            android:exported="true"
-309-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:30:13-36
-310            android:permission="com.google.android.c2dm.permission.SEND" >
-310-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:31:13-73
-311            <intent-filter>
-311-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:32:13-34:29
-312                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-312-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:33:17-81
-312-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:33:25-78
-313            </intent-filter>
-314        </receiver>
-315        <!--
-316             FirebaseMessagingService performs security checks at runtime,
-317             but set to not exported to explicitly avoid allowing another app to call it.
-318        -->
-319        <service
-319-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:41:9-48:19
-320            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-320-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:42:13-82
-321            android:directBootAware="true"
-321-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:43:13-43
-322            android:exported="false" >
-322-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:44:13-37
-323            <intent-filter android:priority="-500" >
-323-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:45:13-47:29
-323-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:45:28-51
-324                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-324-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:46:17-78
-324-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:46:25-75
-325            </intent-filter>
-326        </service>
-327        <service
-327-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:49:9-55:19
-328            android:name="com.google.firebase.components.ComponentDiscoveryService"
-328-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:50:13-84
-329            android:directBootAware="true"
-329-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
-330            android:exported="false" >
-330-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:51:13-37
-331            <meta-data
-331-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:52:13-54:85
-332                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-332-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:53:17-119
-333                android:value="com.google.firebase.components.ComponentRegistrar" />
-333-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:54:17-82
-334            <meta-data
-334-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\bc111320dd0695b3d5a996f9bbbbe5d1\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
-335                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-335-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\bc111320dd0695b3d5a996f9bbbbe5d1\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
-336                android:value="com.google.firebase.components.ComponentRegistrar" />
-336-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\bc111320dd0695b3d5a996f9bbbbe5d1\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
-337            <meta-data
-337-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\911e12b592db83c902d6d30c96de403a\transformed\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:28:13-30:85
-338                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-338-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\911e12b592db83c902d6d30c96de403a\transformed\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:29:17-115
-339                android:value="com.google.firebase.components.ComponentRegistrar" />
-339-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\911e12b592db83c902d6d30c96de403a\transformed\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:30:17-82
-340            <meta-data
-340-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\923b6d497a4b867392f5a99c2adf7024\transformed\jetified-firebase-installations-16.3.5\AndroidManifest.xml:18:13-20:85
-341                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-341-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\923b6d497a4b867392f5a99c2adf7024\transformed\jetified-firebase-installations-16.3.5\AndroidManifest.xml:19:17-127
-342                android:value="com.google.firebase.components.ComponentRegistrar" />
-342-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\923b6d497a4b867392f5a99c2adf7024\transformed\jetified-firebase-installations-16.3.5\AndroidManifest.xml:20:17-82
-343            <!--
-344                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
-345                clients to use it as well, by defining this registrar in their own core/common library.
-346            -->
-347            <meta-data
-347-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
-348                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
-348-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
-349                android:value="com.google.firebase.components.ComponentRegistrar" />
-349-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
-350        </service>
-351
-352        <provider
-352-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
-353            android:name="com.google.firebase.provider.FirebaseInitProvider"
-353-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
-354            android:authorities="com.uderdriverapp.firebaseinitprovider"
-354-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
-355            android:directBootAware="true"
-355-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
-356            android:exported="false"
-356-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:30:13-37
-357            android:initOrder="100" />
-357-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:31:13-36
-358
-359        <meta-data
-359-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\bf9b6fb405d2f7fd8250171739588e78\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
-360            android:name="com.google.android.gms.version"
-360-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\bf9b6fb405d2f7fd8250171739588e78\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
-361            android:value="@integer/google_play_services_version" />
-361-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\bf9b6fb405d2f7fd8250171739588e78\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+298
+299        <meta-data
+299-->[com.google.maps.android:android-maps-utils:3.8.2] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e4d450f858bcc3c5fccf2858f929fd85\transformed\jetified-android-maps-utils-3.8.2\AndroidManifest.xml:8:9-10:69
+300            android:name="com.google.android.gms.version"
+300-->[com.google.maps.android:android-maps-utils:3.8.2] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e4d450f858bcc3c5fccf2858f929fd85\transformed\jetified-android-maps-utils-3.8.2\AndroidManifest.xml:9:13-58
+301            android:value="@integer/google_play_services_version" /> <!-- Needs to be explicitly declared on P+ -->
+301-->[com.google.maps.android:android-maps-utils:3.8.2] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e4d450f858bcc3c5fccf2858f929fd85\transformed\jetified-android-maps-utils-3.8.2\AndroidManifest.xml:10:13-66
+302        <uses-library
+302-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\fcd8b9b2116a382f38af684df1c842a4\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
+303            android:name="org.apache.http.legacy"
+303-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\fcd8b9b2116a382f38af684df1c842a4\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
+304            android:required="false" />
+304-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\fcd8b9b2116a382f38af684df1c842a4\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
+305
+306        <activity
+306-->[com.google.android.gms:play-services-base:18.2.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\4e9e7aa2d3cb9cba6832ceb517e3ab0b\transformed\jetified-play-services-base-18.2.0\AndroidManifest.xml:20:9-22:45
+307            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+307-->[com.google.android.gms:play-services-base:18.2.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\4e9e7aa2d3cb9cba6832ceb517e3ab0b\transformed\jetified-play-services-base-18.2.0\AndroidManifest.xml:20:19-85
+308            android:exported="false"
+308-->[com.google.android.gms:play-services-base:18.2.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\4e9e7aa2d3cb9cba6832ceb517e3ab0b\transformed\jetified-play-services-base-18.2.0\AndroidManifest.xml:22:19-43
+309            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+309-->[com.google.android.gms:play-services-base:18.2.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\4e9e7aa2d3cb9cba6832ceb517e3ab0b\transformed\jetified-play-services-base-18.2.0\AndroidManifest.xml:21:19-78
+310
+311        <receiver
+311-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:28:9-35:20
+312            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+312-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:29:13-78
+313            android:exported="true"
+313-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:30:13-36
+314            android:permission="com.google.android.c2dm.permission.SEND" >
+314-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:31:13-73
+315            <intent-filter>
+315-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:32:13-34:29
+316                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+316-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:33:17-81
+316-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:33:25-78
+317            </intent-filter>
+318        </receiver>
+319        <!--
+320             FirebaseMessagingService performs security checks at runtime,
+321             but set to not exported to explicitly avoid allowing another app to call it.
+322        -->
+323        <service
+323-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:41:9-48:19
+324            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+324-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:42:13-82
+325            android:directBootAware="true"
+325-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:43:13-43
+326            android:exported="false" >
+326-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:44:13-37
+327            <intent-filter android:priority="-500" >
+327-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:45:13-47:29
+327-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:45:28-51
+328                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+328-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:46:17-78
+328-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:46:25-75
+329            </intent-filter>
+330        </service>
+331        <service
+331-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:49:9-55:19
+332            android:name="com.google.firebase.components.ComponentDiscoveryService"
+332-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:50:13-84
+333            android:directBootAware="true"
+333-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
+334            android:exported="false" >
+334-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:51:13-37
+335            <meta-data
+335-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:52:13-54:85
+336                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+336-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:53:17-119
+337                android:value="com.google.firebase.components.ComponentRegistrar" />
+337-->[com.google.firebase:firebase-messaging:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\c79493a5237e4ac851f05b99d295947e\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:54:17-82
+338            <meta-data
+338-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\bc111320dd0695b3d5a996f9bbbbe5d1\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+339                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+339-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\bc111320dd0695b3d5a996f9bbbbe5d1\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+340                android:value="com.google.firebase.components.ComponentRegistrar" />
+340-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\bc111320dd0695b3d5a996f9bbbbe5d1\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+341            <meta-data
+341-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\911e12b592db83c902d6d30c96de403a\transformed\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:28:13-30:85
+342                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+342-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\911e12b592db83c902d6d30c96de403a\transformed\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:29:17-115
+343                android:value="com.google.firebase.components.ComponentRegistrar" />
+343-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\911e12b592db83c902d6d30c96de403a\transformed\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:30:17-82
+344            <meta-data
+344-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\923b6d497a4b867392f5a99c2adf7024\transformed\jetified-firebase-installations-16.3.5\AndroidManifest.xml:18:13-20:85
+345                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+345-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\923b6d497a4b867392f5a99c2adf7024\transformed\jetified-firebase-installations-16.3.5\AndroidManifest.xml:19:17-127
+346                android:value="com.google.firebase.components.ComponentRegistrar" />
+346-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\923b6d497a4b867392f5a99c2adf7024\transformed\jetified-firebase-installations-16.3.5\AndroidManifest.xml:20:17-82
+347            <!--
+348                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+349                clients to use it as well, by defining this registrar in their own core/common library.
+350            -->
+351            <meta-data
+351-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
+352                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+352-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
+353                android:value="com.google.firebase.components.ComponentRegistrar" />
+353-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
+354        </service>
+355
+356        <provider
+356-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
+357            android:name="com.google.firebase.provider.FirebaseInitProvider"
+357-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
+358            android:authorities="com.uderdriverapp.firebaseinitprovider"
+358-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
+359            android:directBootAware="true"
+359-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
+360            android:exported="false"
+360-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:30:13-37
+361            android:initOrder="100" />
+361-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:31:13-36
 362
 363        <service
 363-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e39449332b16abbff71917ad5661bdd3\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19

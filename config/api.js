@@ -2,6 +2,7 @@ import axios from "axios";
 
 //const BASE_URL = __DEV__ ? 'http://127.0.0.1/api/android/driver' : 'http://admin-panel.almalak.com/api/android/driver';
 const BASE_URL =  'https://udertaxi.com/api/android/driver';
+//const BASE_URL =  'https://a5d0-27-147-170-201.ngrok-free.app/api/android/driver';
 const GOOGLE_API_KEY ='AIzaSyBzzTk-gzFStNFGDfSlS-H3HENq-ZAlkyQ';
 const SOCKET_IO_URL = 'https://udertaxi.com:3030';
 const SMS_API_URL =  'https://udertaxi.com/api/android/rider/';

@@ -11,6 +11,8 @@ import com.facebook.react.shell.MainReactPackage;
 import java.util.Arrays;
 import java.util.ArrayList;
 
+// react-native-vector-icons
+import com.oblador.vectoricons.VectorIconsPackage;
 // @react-native-async-storage/async-storage
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 // @react-native-community/checkbox
@@ -51,8 +53,6 @@ import com.zmxv.RNSound.RNSoundPackage;
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
 // react-native-svg
 import com.horcrux.svg.SvgPackage;
-// react-native-vector-icons
-import com.oblador.vectoricons.VectorIconsPackage;
 // react-native-version-check
 import io.xogus.reactnative.versioncheck.RNVersionCheckPackage;
 
@@ -100,6 +100,7 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
+      new VectorIconsPackage(),
       new AsyncStoragePackage(),
       new ReactCheckBoxPackage(),
       new RNDateTimePickerPackage(),
@@ -120,7 +121,6 @@ public class PackageList {
       new RNSoundPackage(),
       new SplashScreenReactPackage(),
       new SvgPackage(),
-      new VectorIconsPackage(),
       new RNVersionCheckPackage()
     ));
   }
