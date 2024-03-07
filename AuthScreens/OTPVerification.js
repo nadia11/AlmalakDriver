@@ -139,7 +139,13 @@ export const OTPVerification = (props) => {
                   setOtpVerifySuccess(false);
                 }
                 else if(redirectScreen === "SelectDivision"){
-                            props.navigation.navigate('SelectDivision', { mobile: mobile });
+                            //props.navigation.navigate('SelectDivision', { mobile: mobile });
+                            props.navigation.navigate('SelectVehicle', {
+                            division_id: null,
+                            district_id: null,
+                            branch_id: null,
+                              mobile: mobile,
+                  });
                             setOtpVerifySuccess(false);
                           }
               }, 500);
