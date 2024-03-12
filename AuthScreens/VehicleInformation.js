@@ -209,7 +209,7 @@ export default class VehicleInformation extends Component{
   };
 
   disabledBtn() {
-    let fields = this.state.selectedManufacturer && this.state.selectedModel && this.state.selectedYear && this.state.drivingLicence && this.state.vehicle_reg_number && this.state.vehicle_tax_token && this.state.tax_renewal_date && this.state.insurance_number && this.state.insurance_renewal_date && this.state.fitness_certificate;
+    let fields = this.state.selectedManufacturer && this.state.selectedModel && this.state.selectedYear && this.state.drivingLicence && this.state.vehicle_reg_number && this.state.vehicle_tax_token  && this.state.fitness_certificate;
     return fields !== '' ? 0 : 1;
   }
 
@@ -231,9 +231,11 @@ export default class VehicleInformation extends Component{
       driving_licence: this.state.drivingLicence,
       vehicle_reg_number: this.state.vehicle_reg_number,
       vehicle_tax_token: this.state.vehicle_tax_token,
-      tax_renewal_date: moment(this.state.tax_renewal_date).format('DD/MM/YYYY'),
-      insurance_number: this.state.insurance_number,
-      insurance_renewal_date: moment(this.state.insurance_renewal_date).format('DD/MM/YYYY'),
+     // tax_renewal_date: moment(this.state.tax_renewal_date).format('DD/MM/YYYY'),
+      insurance_number: null,
+      tax_renewal_date: null,
+      //insurance_renewal_date: moment(this.state.insurance_renewal_date).format('DD/MM/YYYY'),
+      insurance_renewal_date: null,
       fitness_certificate: this.state.fitness_certificate
     })
     .then(async response => {
@@ -309,36 +311,36 @@ export default class VehicleInformation extends Component{
             <TextInput style={styles.textInput} placeholder="Enter Tax Token Number" placeholderTextColor="rgba(0,0,0,.5)" returnKeyType="go" autoCorrect={false} onChangeText={val => this.setState({vehicle_tax_token: val})} value={this.state.vehicle_tax_token} ref={this.taxTokenRef} onSubmitEditing={() => this.taxRenewalDateRef.current.focus()} />
           </View>
           
-          <View style={styles.dropdowWrap}>
-            <Text style={styles.pickerLabel}>Token Renewal Date</Text>
-            <TextInput style={styles.textInput} placeholder="Enter Token Renewal Date" placeholderTextColor="rgba(0,0,0,.5)" returnKeyType="go" autoCorrect={false} onChangeText={val => this.setState({tax_renewal_date: val})} value={this.state.tax_renewal_date ? moment(this.state.tax_renewal_date).format('DD/MM/YYYY') : ""} onFocus={() => this.setState({tokenDatePickerShow: true})} ref={this.taxRenewalDateRef} onSubmitEditing={() => this.insuranceNumberRef.current.focus()} />
+          {/*<View style={styles.dropdowWrap}>*/}
+          {/*  <Text style={styles.pickerLabel}>Token Renewal Date</Text>*/}
+          {/*  <TextInput style={styles.textInput} placeholder="Enter Token Renewal Date" placeholderTextColor="rgba(0,0,0,.5)" returnKeyType="go" autoCorrect={false} onChangeText={val => this.setState({tax_renewal_date: val})} value={this.state.tax_renewal_date ? moment(this.state.tax_renewal_date).format('DD/MM/YYYY') : ""} onFocus={() => this.setState({tokenDatePickerShow: true})} ref={this.taxRenewalDateRef} onSubmitEditing={() => this.insuranceNumberRef.current.focus()} />*/}
 
-            {this.state.tokenDatePickerShow === true && 
-              <DateTimePicker testID="dateTimePicker" timeZoneOffsetInMinutes={0} display="default" 
-              value={this.state.tokenDatePicker} mode="date" onChange={this.setTokenDateOnChange}
-              is24Hour={false} dateFormat={"dayofweek day month"} firstDayOfWeek="Saturday"
-              minimumDate={new Date().setFullYear(new Date().getFullYear()-3)} maximumDate={new Date().setFullYear(new Date().getFullYear()+5)}
-              />
-            }
-          </View>
+          {/*  {this.state.tokenDatePickerShow === true && */}
+          {/*    <DateTimePicker testID="dateTimePicker" timeZoneOffsetInMinutes={0} display="default" */}
+          {/*    value={this.state.tokenDatePicker} mode="date" onChange={this.setTokenDateOnChange}*/}
+          {/*    is24Hour={false} dateFormat={"dayofweek day month"} firstDayOfWeek="Saturday"*/}
+          {/*    minimumDate={new Date().setFullYear(new Date().getFullYear()-3)} maximumDate={new Date().setFullYear(new Date().getFullYear()+5)}*/}
+          {/*    />*/}
+          {/*  }*/}
+          {/*</View>*/}
           
-          <View style={styles.dropdowWrap}>
-            <Text style={styles.pickerLabel}>Insurance Number</Text>
-            <TextInput style={styles.textInput} placeholder="Enter Insurance Number" placeholderTextColor="rgba(0,0,0,.5)" returnKeyType="go" autoCorrect={false} onChangeText={val => this.setState({insurance_number: val})} value={this.state.insurance_number} ref={this.insuranceNumberRef} onSubmitEditing={() => this.insuranceRenewalDateRef.current.focus()} />
-          </View>
+          {/*<View style={styles.dropdowWrap}>*/}
+          {/*  <Text style={styles.pickerLabel}>Insurance Number</Text>*/}
+          {/*  <TextInput style={styles.textInput} placeholder="Enter Insurance Number" placeholderTextColor="rgba(0,0,0,.5)" returnKeyType="go" autoCorrect={false} onChangeText={val => this.setState({insurance_number: val})} value={this.state.insurance_number} ref={this.insuranceNumberRef} onSubmitEditing={() => this.insuranceRenewalDateRef.current.focus()} />*/}
+          {/*</View>*/}
           
-          <View style={styles.dropdowWrap}>
-            <Text style={styles.pickerLabel}>Insurance Renewal Date</Text>
-            <TextInput style={styles.textInput} placeholder="Enter Insurance Renewal Date" placeholderTextColor="rgba(0,0,0,.5)" returnKeyType="go" autoCorrect={false} onChangeText={val => this.setState({insurance_renewal_date: val})} value={this.state.insurance_renewal_date ? moment(this.state.insurance_renewal_date).format('DD/MM/YYYY') : ""} onFocus={() => this.setState({insuranceDatePickerShow: true})} ref={this.insuranceRenewalDateRef} onSubmitEditing={() => this.fitnessCertificateRef.current.focus()} />
-            
-            {this.state.insuranceDatePickerShow === true && 
-              <DateTimePicker testID="dateTimePicker" timeZoneOffsetInMinutes={0} display="default" 
-              value={this.state.insuranceDatePicker} mode="date" onChange={this.setInsuranceDateOnChange}
-              is24Hour={false} dateFormat={"dayofweek day month"} firstDayOfWeek="Saturday"
-              minimumDate={new Date().setFullYear(new Date().getFullYear()-3)} maximumDate={new Date().setFullYear(new Date().getFullYear()+5)}
-              />
-            }
-          </View>
+          {/*<View style={styles.dropdowWrap}>*/}
+          {/*  <Text style={styles.pickerLabel}>Insurance Renewal Date</Text>*/}
+          {/*  <TextInput style={styles.textInput} placeholder="Enter Insurance Renewal Date" placeholderTextColor="rgba(0,0,0,.5)" returnKeyType="go" autoCorrect={false} onChangeText={val => this.setState({insurance_renewal_date: val})} value={this.state.insurance_renewal_date ? moment(this.state.insurance_renewal_date).format('DD/MM/YYYY') : ""} onFocus={() => this.setState({insuranceDatePickerShow: true})} ref={this.insuranceRenewalDateRef} onSubmitEditing={() => this.fitnessCertificateRef.current.focus()} />*/}
+          {/*  */}
+          {/*  {this.state.insuranceDatePickerShow === true && */}
+          {/*    <DateTimePicker testID="dateTimePicker" timeZoneOffsetInMinutes={0} display="default" */}
+          {/*    value={this.state.insuranceDatePicker} mode="date" onChange={this.setInsuranceDateOnChange}*/}
+          {/*    is24Hour={false} dateFormat={"dayofweek day month"} firstDayOfWeek="Saturday"*/}
+          {/*    minimumDate={new Date().setFullYear(new Date().getFullYear()-3)} maximumDate={new Date().setFullYear(new Date().getFullYear()+5)}*/}
+          {/*    />*/}
+          {/*  }*/}
+          {/*</View>*/}
 
           <View style={styles.dropdowWrap}>
             <Text style={styles.pickerLabel}>Fitness Certificate</Text>

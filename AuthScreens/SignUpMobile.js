@@ -90,7 +90,7 @@ export default class SignUpMobile extends Component {
 			    this.GENERATE_DIGIT_OTP(6); //OTP execute
 			
           //let generateDigitOTP = Math.floor(Math.random() * 1000000) + 1;
-          this.sendOTP(this.MOBILE_WITH_ZERO(this.state.mobileNumber), this.state.digitOtpCode); //Send OTP Message to Entered Mobile Number
+         // this.sendOTP(this.MOBILE_WITH_ZERO(this.state.mobileNumber), this.state.digitOtpCode); //Send OTP Message to Entered Mobile Number
           console.log(this.state.digitOtpCode);
           this.setState({ userToken: '1' });
 
@@ -115,7 +115,7 @@ export default class SignUpMobile extends Component {
           console.log("driver_status: "+responseJson.driver_status+ ", profile_status: "+ responseJson.profile_status);
 
 			    this.GENERATE_DIGIT_OTP(6);
-          this.sendOTP(this.MOBILE_WITH_ZERO(this.state.mobileNumber), this.state.digitOtpCode);
+         // this.sendOTP(this.MOBILE_WITH_ZERO(this.state.mobileNumber), this.state.digitOtpCode);
 
           try {
             await AsyncStorage.setItem('mobile', this.MOBILE_WITH_ZERO(this.state.mobileNumber));
@@ -322,7 +322,7 @@ export default class SignUpMobile extends Component {
           </Animatable.View>{ /*Bottom Part*/ }
 
           <View style={{ flex: 1, height: 20, backgroundColor: '#fff', alignItems: 'center', justifyContent: 'center', borderLeftWidth: 0, borderRightWidth: 0, borderTopColor: '#e8e8ec', borderWidth: 1 }}>
-              <Text style={{ color: "#444" }}>Already have an Account? <Text style={styles.hyperLinkText} onPress={ () => this.props.navigation.navigate('LoginByEmail') }>Login</Text></Text>
+              <Text style={{ color: "#444" }}>Already have an Account? <Text style={styles.hyperLinkText} onPress={ () => this.props.navigation.navigate('LoginMobile') }>Login</Text></Text>
           </View>
       </View>
     );

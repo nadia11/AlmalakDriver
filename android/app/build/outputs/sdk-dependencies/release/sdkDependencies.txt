@@ -1240,10 +1240,10 @@ library {
   maven_library {
     groupId: "com.google.android.gms"
     artifactId: "play-services-location"
-    version: "20.0.0"
+    version: "21.0.1"
   }
   digests {
-    sha256: "\262)Q\377\377\305\361\351\037\324\2342\312\217\333V\230W7R\267\027\317`K\302\000r\213g\240\346"
+    sha256: "\274\211\361\246\021\211e!kEC\236~\223`\246\362\005FT\344\2023Tv\216x\204\373;k\f"
   }
   repo_index {
     value: 2
@@ -1253,10 +1253,10 @@ library {
   maven_library {
     groupId: "com.google.android.gms"
     artifactId: "play-services-base"
-    version: "18.1.0"
+    version: "18.2.0"
   }
   digests {
-    sha256: "N\312V\316\354\3242Z7l\330C\257V7~#v\316(M\fo\005\245\320\250/L\033\370\315"
+    sha256: "\272\036\376A\213~&\226\207\214\306\004\302}\307\2572\242\307\024b\337Uc#\a\311\t\252\234.\021"
   }
   repo_index {
     value: 2
@@ -1305,10 +1305,10 @@ library {
   maven_library {
     groupId: "com.google.android.gms"
     artifactId: "play-services-maps"
-    version: "18.0.2"
+    version: "18.2.0"
   }
   digests {
-    sha256: "D*F\207\364J&`Q\2059\206\330\350\366\224\377\306._\347R\266\023\263V\306o\233\365]-"
+    sha256: "D\365\006UW\212!\305y\341\273-\254\256\304\305E\354M\370\023\223\326\375r6\326d&\200V\251"
   }
   repo_index {
     value: 2
@@ -1318,10 +1318,10 @@ library {
   maven_library {
     groupId: "com.google.maps.android"
     artifactId: "android-maps-utils"
-    version: "3.4.0"
+    version: "3.8.2"
   }
   digests {
-    sha256: "\306\300[~\351\262 \321}Y\300\277\377\356{\353s\270\215\3172\277\370\234\301\370>\316\376\331\216Y"
+    sha256: "\321l[\365(N\213\020\305\004\2565\352\035\021\217z\3026\356\221\364\346\022\321\360\214z\364P\005\250"
   }
   repo_index {
     value: 1
@@ -2059,6 +2059,11 @@ library_dependencies {
   library_dep_index: 24
   library_dep_index: 96
   library_dep_index: 77
+  library_dep_index: 79
+}
+library_dependencies {
+  library_index: 101
+  library_dep_index: 100
 }
 library_dependencies {
   library_index: 102

@@ -54,7 +54,8 @@ export const StartUp = (props) => {
         <SliderScrollView images={fromOnline ? sliderImages : localSliderImages} fromUrl={fromOnline} sliderHeight={SCREEN_HEIGHT / 2} dotPosition="bottom" />
 
         <View style={{position: 'absolute', bottom: 10, left: 10, flexWrap: "nowrap", flexDirection: "row", justifyContent: 'center'}}>
-          <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('LoginByEmail')}><Text style={styles.btnText}>Sign In</Text></TouchableOpacity>
+          {/*<TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('LoginByEmail')}><Text style={styles.btnText}>Sign In</Text></TouchableOpacity>*/}
+          <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('LoginMobile')}><Text style={styles.btnText}>Sign In</Text></TouchableOpacity>
           <TouchableOpacity style={styles.buttonOutline} onPress={() => props.navigation.navigate('SignUpMobile')}><Text style={{ color: "#EF0C14", fontWeight: 'bold', fontSize: 16}}>Sign Up</Text></TouchableOpacity>
         </View>
     </View>

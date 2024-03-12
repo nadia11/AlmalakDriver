@@ -78,6 +78,19 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="F:\UderDriver\android@@:react-native-vector-icons::release"
+      jars="F:\UderDriver\node_modules\react-native-vector-icons\android\build\.transforms\a83fdc1fcf624d11f50df2170530f1ba\transformed\out\jars\classes.jar;F:\UderDriver\node_modules\react-native-vector-icons\android\build\.transforms\a83fdc1fcf624d11f50df2170530f1ba\transformed\out\jars\libs\R.jar"
+      resolved="UderDriverApp:react-native-vector-icons:unspecified"
+      folder="F:\UderDriver\node_modules\react-native-vector-icons\android\build\.transforms\a83fdc1fcf624d11f50df2170530f1ba\transformed\out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="F:\UderDriver\android@@:react-native-async-storage_async-storage::release"
       jars="F:\UderDriver\node_modules\@react-native-async-storage\async-storage\android\build\.transforms\5b93f21cdb049b31944e5f3544c68d9d\transformed\out\jars\classes.jar;F:\UderDriver\node_modules\@react-native-async-storage\async-storage\android\build\.transforms\5b93f21cdb049b31944e5f3544c68d9d\transformed\out\jars\libs\R.jar"
       resolved="UderDriverApp:react-native-async-storage_async-storage:unspecified"
@@ -286,19 +299,6 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="F:\UderDriver\android@@:react-native-vector-icons::release"
-      jars="F:\UderDriver\node_modules\react-native-vector-icons\android\build\.transforms\a83fdc1fcf624d11f50df2170530f1ba\transformed\out\jars\classes.jar;F:\UderDriver\node_modules\react-native-vector-icons\android\build\.transforms\a83fdc1fcf624d11f50df2170530f1ba\transformed\out\jars\libs\R.jar"
-      resolved="UderDriverApp:react-native-vector-icons:unspecified"
-      folder="F:\UderDriver\node_modules\react-native-vector-icons\android\build\.transforms\a83fdc1fcf624d11f50df2170530f1ba\transformed\out"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
       name="F:\UderDriver\android@@:react-native-version-check::release"
       jars="F:\UderDriver\node_modules\react-native-version-check\android\build\.transforms\735674eee580ad691eeb0bfa3b172e44\transformed\out\jars\classes.jar;F:\UderDriver\node_modules\react-native-version-check\android\build\.transforms\735674eee580ad691eeb0bfa3b172e44\transformed\out\jars\libs\R.jar"
       resolved="UderDriverApp:react-native-version-check:unspecified"
@@ -364,10 +364,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="com.google.android.gms:play-services-location:20.0.0@aar"
-      jars="C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\9a460770c6cb58caf18b70e6cbf4450a\transformed\jetified-play-services-location-20.0.0\jars\classes.jar"
-      resolved="com.google.android.gms:play-services-location:20.0.0"
-      folder="C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\9a460770c6cb58caf18b70e6cbf4450a\transformed\jetified-play-services-location-20.0.0"
+      name="com.google.android.gms:play-services-location:21.0.1@aar"
+      jars="C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\fe9d4c1f23e04dabeaff84ca5816f596\transformed\jetified-play-services-location-21.0.1\jars\classes.jar"
+      resolved="com.google.android.gms:play-services-location:21.0.1"
+      folder="C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\fe9d4c1f23e04dabeaff84ca5816f596\transformed\jetified-play-services-location-21.0.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -377,10 +377,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="com.google.android.gms:play-services-base:18.1.0@aar"
-      jars="C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\7bc2107a0f24dde54b783ba4b64ec0fd\transformed\jetified-play-services-base-18.1.0\jars\classes.jar"
-      resolved="com.google.android.gms:play-services-base:18.1.0"
-      folder="C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\7bc2107a0f24dde54b783ba4b64ec0fd\transformed\jetified-play-services-base-18.1.0"
+      name="com.google.android.gms:play-services-base:18.2.0@aar"
+      jars="C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\4e9e7aa2d3cb9cba6832ceb517e3ab0b\transformed\jetified-play-services-base-18.2.0\jars\classes.jar"
+      resolved="com.google.android.gms:play-services-base:18.2.0"
+      folder="C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\4e9e7aa2d3cb9cba6832ceb517e3ab0b\transformed\jetified-play-services-base-18.2.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -986,10 +986,23 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="com.google.android.gms:play-services-maps:18.0.2@aar"
-      jars="C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\4fe486e3c16899c67b1f49a3e3ae28f6\transformed\jetified-play-services-maps-18.0.2\jars\classes.jar"
-      resolved="com.google.android.gms:play-services-maps:18.0.2"
-      folder="C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\4fe486e3c16899c67b1f49a3e3ae28f6\transformed\jetified-play-services-maps-18.0.2"
+      name="com.google.maps.android:android-maps-utils:3.8.2@aar"
+      jars="C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e4d450f858bcc3c5fccf2858f929fd85\transformed\jetified-android-maps-utils-3.8.2\jars\classes.jar"
+      resolved="com.google.maps.android:android-maps-utils:3.8.2"
+      folder="C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e4d450f858bcc3c5fccf2858f929fd85\transformed\jetified-android-maps-utils-3.8.2"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.google.android.gms:play-services-maps:18.2.0@aar"
+      jars="C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\fcd8b9b2116a382f38af684df1c842a4\transformed\jetified-play-services-maps-18.2.0\jars\classes.jar"
+      resolved="com.google.android.gms:play-services-maps:18.2.0"
+      folder="C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\fcd8b9b2116a382f38af684df1c842a4\transformed\jetified-play-services-maps-18.2.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -1513,19 +1526,6 @@
       jars="C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\7159fdde894990131f3ba6437117d8d3\transformed\jetified-installreferrer-1.1.2\jars\classes.jar"
       resolved="com.android.installreferrer:installreferrer:1.1.2"
       folder="C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\7159fdde894990131f3ba6437117d8d3\transformed\jetified-installreferrer-1.1.2"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="com.google.maps.android:android-maps-utils:3.4.0@aar"
-      jars="C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\fa43ca7f0a9d11d60f971bb6091452d2\transformed\jetified-android-maps-utils-3.4.0\jars\classes.jar"
-      resolved="com.google.maps.android:android-maps-utils:3.4.0"
-      folder="C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\fa43ca7f0a9d11d60f971bb6091452d2\transformed\jetified-android-maps-utils-3.4.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"

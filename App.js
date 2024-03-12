@@ -23,7 +23,7 @@ import SelectVehicle from './AuthScreens/SelectVehicle';
 import VehicleInformation from './AuthScreens/VehicleInformation';
 import VehicleInformationBike from './AuthScreens/VehicleInformationBike';
 import DriverStatusScreen from './AuthScreens/DriverStatusScreen';
-import LoginMobileScreen from './AuthScreens/LoginMobile';
+import LoginMobile from './AuthScreens/LoginMobile';
 import { OTPVerification } from './AuthScreens/OTPVerification';
 import LoginByEmail from './AuthScreens/LoginByEmail';
 import ForgotPassword from './AuthScreens/ForgotPassword';
@@ -59,7 +59,7 @@ function AuthStackScreen() {
       <AuthStack.Screen name="VehicleInformation" component={VehicleInformation} options={({ route }) => ({ title: route.params.headerTitle, headerTransparent:false })} />
       <AuthStack.Screen name="VehicleInformationBike" component={VehicleInformationBike} options={{ title: 'Sign Up for Bike', headerTransparent:false }} />
       <AuthStack.Screen name="SignUpForm" component={SignUpForm} options={{ title: 'Sign Up Form', headerTransparent:false }} />
-      <AuthStack.Screen name="LoginMobile" component={LoginMobileScreen} options={{ title: 'Login By Mobile', headerTransparent:true }} />
+      <AuthStack.Screen name="LoginMobile" component={LoginMobile} options={{ title: 'Login By Mobile', headerTransparent:true }} />
       <AuthStack.Screen name="OTPVerification" component={OTPVerification} options={{ title: 'OTP Verification', headerTransparent:false }} />
       <AuthStack.Screen name="LoginByEmail" component={LoginByEmail} options={{ title: 'Login By Email', headerTransparent:true }} />
       <AuthStack.Screen name="ForgotPassword" component={ForgotPassword} options={{ title: 'Forgot Password', headerTransparent:false }} />

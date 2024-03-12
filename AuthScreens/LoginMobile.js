@@ -10,11 +10,13 @@ import axios from "axios";
 import { BASE_URL, SMS_API_URL } from '../config/api';
 import { Colors } from '../styles';
 import { Options } from '../config';
+import {AuthContext} from "./context";
 
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 const SCREEN_WIDTH = Dimensions.get('window').width;
 
-export default class SignUpMobile extends Component {
+export default class LoginMobile extends Component {
+  static contextType = AuthContext;
   constructor(props) {
     super(props)
 
@@ -45,7 +47,6 @@ export default class SignUpMobile extends Component {
     })
         .then(response => {
           if (response.data && response.data.otp_id) {
-            console.log("OTP ID:", response.data.otp_id);
             this.setState({ otpId: response.data.otp_id });
           } else {
             console.error("OTP ID not found in response:", response.data);
@@ -93,34 +94,42 @@ export default class SignUpMobile extends Component {
 
           //Send OTP Message to Entered Mobile Number
           //let GENERATE_DIGIT_OTP = Math.floor(Math.random() * 1000000) + 1;
-          this.sendOTP(this.MOBILE_WITH_ZERO(this.state.mobileNumber), this.state.digitOtpCode);
-          console.log(this.state.digitOtpCode);
-          this.setState({ userToken: '1' });
 
           try {
             await AsyncStorage.setItem('mobile', this.MOBILE_WITH_ZERO(this.state.mobileNumber));
             await AsyncStorage.setItem('callingCode', "+880");
+            await AsyncStorage.setItem('email', responseJson.user_email);
             await AsyncStorage.setItem('userName', responseJson.user_name);
             await AsyncStorage.setItem('userImage', responseJson.user_image);
 
-            // this.props.navigation.navigate('OTPVerification', {
-            //   mobile: this.MOBILE_WITH_ZERO(this.state.mobileNumber),
-            //   callingCode: this.state.country.callingCode,
-            //   OTP_CODE: this.state.digitOtpCode,
-            //   redirectScreen: "App"
-            // });
-            // this.setState({ animating: false });
+            if(responseJson.profile_status === "complete" && responseJson.approval_status === "unapproved" ){
+              this.setState({ animating: false });
+              this.props.navigation.navigate('DriverStatusScreen', {
+                userName: responseJson.user_name
+              });
+            } else {
+              await AsyncStorage.setItem('userToken', '1');
+              this.setState({ userToken: '1' });
+             // this.context.signInToken(); /*This for auto redirect to home page & refresh*/
+              this.sendOTP(this.MOBILE_WITH_ZERO(this.state.mobileNumber), this.state.digitOtpCode);
+              //props.navigation.navigate('App');
+            }
+
           } catch (error) { console.error(error); }
         }
         else if(responseJson.code === 501){
           Alert.alert('Error', responseJson.message, [{ text: "OK" }]);
           this.setState({ animating: false });
         }
+        else if(responseJson.code === 502){
+          Alert.alert('Error', responseJson.message, [{ text: "OK" }]);
+          this.setState({ animating: false });
+        }
       })
       .catch((error) => {
         console.log("Submitting Error: "+error); 
-        ToastAndroid.show(Options.APP_OPTIONS.NETWORK_ERROR_MESSAGE, ToastAndroid.SHORT); 
-        setAnimating( false );
+        ToastAndroid.show(Options.APP_OPTIONS.NETWORK_ERROR_MESSAGE, ToastAndroid.SHORT);
+      this.setState({ animating: false });
       });
     }
   }
@@ -135,28 +144,29 @@ export default class SignUpMobile extends Component {
     this.setState({digitOtpCode: OTP}); 
   }
 
-  GENERATE_STRING_OTP = (length=10) => { 
-    var string = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'; 
-    let OTP = ''; 
-    for (let i = 0; i <length; i++ ) {
-      OTP += string[Math.floor(Math.random() * string.length)];
-    } 
-    this.setState({stringOtpCode: OTP.toUpperCase()});
-  }
+  // GENERATE_STRING_OTP = (length=10) => {
+  //   var string = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  //   let OTP = '';
+  //   for (let i = 0; i <length; i++ ) {
+  //     OTP += string[Math.floor(Math.random() * string.length)];
+  //   }
+  //   this.setState({stringOtpCode: OTP.toUpperCase()});
+  // }
     
 
-  UNSAFE_componentWillMount() {
+componentWillMount() {
     this.loginHeight = new Animated.Value(150)
 
     //this.keyboardWillShowListener = Keyboard.addListener('keyboardWillShow', this.keyboardWillShow)
-    this.keyboardWillHideListener = Keyboard.addListener('keyboardWillHide', this.keyboardWillHide)
-    this.keyboardDidShowListener = Keyboard.addListener('keyboardDidShow', this.keyboardWillShow)
-    this.keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', this.keyboardWillHide)
-
-    this.keyboardHeight = new Animated.Value(0)
-    this.forwardArrowOpacity = new Animated.Value(0)
-    this.borderBottomWidth = new Animated.Value(0)
+    // this.keyboardWillHideListener = Keyboard.addListener('keyboardWillHide', this.keyboardWillHide)
+    // this.keyboardDidShowListener = Keyboard.addListener('keyboardDidShow', this.keyboardWillShow)
+    // this.keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', this.keyboardWillHide)
+  this.loginHeight = new Animated.Value(150);
+  this.keyboardHeight = new Animated.Value(0);
+  this.forwardArrowOpacity = new Animated.Value(0);
+  this.borderBottomWidth = new Animated.Value(0);
   }
+
   componentDidUpdate(prevProps, prevState) {
     // Check if yourVariable is set
     if (this.state.otpId !== prevState.otpId)  {
@@ -241,6 +251,7 @@ export default class SignUpMobile extends Component {
   }
 
   render() {
+    const { signInToken } = this.context;
     const headerTextOpacity = this.loginHeight.interpolate({
       inputRange: [150, SCREEN_HEIGHT],
       outputRange: [1, 0]
@@ -274,9 +285,9 @@ export default class SignUpMobile extends Component {
         <CustomStatusBar />
       
         <ImageBackground source={require('../assets/login-bg.jpeg')} style={{ flex: 6, justifyContent: 'center', alignItems: 'center', resizeMode: 'contain', height: SCREEN_HEIGHT-200, width: SCREEN_WIDTH, marginBottom: 120, paddingTop: 50 }}>
-          <Animatable.View animation="zoomIn" iterationCount={1} style={{ height: 140, width: 140, alignItems: 'center', justifyContent: 'center', backgroundColor: '#fff', padding: 15, borderRadius: 5, marginTop: 30 }}>
-            <Image style={{ height: 130, width: 130, resizeMode: 'contain' }} source={require('../assets/logo.png')} />
-          </Animatable.View>
+          {/*<Animatable.View animation="zoomIn" iterationCount={1} style={{ height: 140, width: 140, alignItems: 'center', justifyContent: 'center', backgroundColor: '#fff', padding: 15, borderRadius: 5, marginTop: 30 }}>*/}
+          {/*  <Image style={{ height: 130, width: 130, resizeMode: 'contain' }} source={require('../assets/logo.png')} />*/}
+          {/*</Animatable.View>*/}
         </ImageBackground>
 
         <Animatable.View animation="slideInUp" iterationCount={1} style={{ paddingBottom: 40, backgroundColor: "#fff" }}>

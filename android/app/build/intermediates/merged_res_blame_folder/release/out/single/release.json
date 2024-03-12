@@ -16,8 +16,8 @@
         "source": "com.uderdriverapp-res-29:/drawable-mdpi/assets_images_slider1.jpg"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-35:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "com.uderdriverapp-main-36:/mipmap-mdpi/ic_launcher.png"
+        "merged": "com.uderdriverapp-merged_res-35:/mipmap-mdpi_ic_launcher.jpg.flat",
+        "source": "com.uderdriverapp-main-36:/mipmap-mdpi/ic_launcher.jpg"
     },
     {
         "merged": "com.uderdriverapp-merged_res-35:/mipmap-xhdpi_ic_launcher_round.png.flat",
@@ -38,6 +38,10 @@
     {
         "merged": "com.uderdriverapp-merged_res-35:/drawable-mdpi_assets_norecords.png.flat",
         "source": "com.uderdriverapp-res-29:/drawable-mdpi/assets_norecords.png"
+    },
+    {
+        "merged": "com.uderdriverapp-merged_res-35:/mipmap-xhdpi_ic_launcher.jpg.flat",
+        "source": "com.uderdriverapp-main-36:/mipmap-xhdpi/ic_launcher.jpg"
     },
     {
         "merged": "com.uderdriverapp-merged_res-35:/drawable-xxhdpi_ic_notification.png.flat",
@@ -104,8 +108,8 @@
         "source": "com.uderdriverapp-res-29:/drawable-mdpi/node_modules_reactnativeratings_dist_images_bell.png"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-35:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "com.uderdriverapp-main-36:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "com.uderdriverapp-merged_res-35:/mipmap-xxxhdpi_ic_launcher.jpg.flat",
+        "source": "com.uderdriverapp-main-36:/mipmap-xxxhdpi/ic_launcher.jpg"
     },
     {
         "merged": "com.uderdriverapp-merged_res-35:/drawable-mdpi_node_modules_reactnativeratings_dist_images_airbnbstarselected.png.flat",
@@ -196,16 +200,8 @@
         "source": "com.uderdriverapp-main-36:/raw/beep.mp3"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-35:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "com.uderdriverapp-main-36:/mipmap-hdpi/ic_launcher.png"
-    },
-    {
         "merged": "com.uderdriverapp-merged_res-35:/raw_uber_ringtone.mp3.flat",
         "source": "com.uderdriverapp-main-36:/raw/uber_ringtone.mp3"
-    },
-    {
-        "merged": "com.uderdriverapp-merged_res-35:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "com.uderdriverapp-main-36:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
         "merged": "com.uderdriverapp-merged_res-35:/mipmap-xxxhdpi_splash_icon.png.flat",
@@ -228,12 +224,12 @@
         "source": "com.uderdriverapp-res-29:/drawable-mdpi/node_modules_reactnativepaper_src_assets_backchevron.png"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-35:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "com.uderdriverapp-main-36:/mipmap-xxxhdpi/ic_launcher.png"
-    },
-    {
         "merged": "com.uderdriverapp-merged_res-35:/mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "com.uderdriverapp-main-36:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.uderdriverapp-merged_res-35:/mipmap-xxhdpi_ic_launcher.jpg.flat",
+        "source": "com.uderdriverapp-main-36:/mipmap-xxhdpi/ic_launcher.jpg"
     },
     {
         "merged": "com.uderdriverapp-merged_res-35:/mipmap-hdpi_splash_icon.png.flat",
