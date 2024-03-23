@@ -66,8 +66,8 @@ function AuthStackScreen() {
       <AuthStack.Screen name="PasswordResetVerify" component={PasswordResetVerify} options={{ title: 'Password Reset Verify', headerTransparent:false }} />
       <AuthStack.Screen name="PasswordResetForm" component={PasswordResetForm} options={{ title: 'Password Reset Form', headerTransparent:false }} />
       <AuthStack.Screen name="DriverStatusScreen" component={DriverStatusScreen} options={{ title: '', headerTransparent:true }} />
-      <AuthStack.Screen name="TermsAndConditionsModal" component={TermsAndConditionsModal} options={{ title: '', headerBackTitleVisible: false, headerTintColor: '#333' }} />
-      <AuthStack.Screen name="PrivacyPolicyModal" component={PrivacyPolicyModal} options={{ title: '', headerBackTitleVisible: false, headerTintColor: '#333' }} />
+      <AuthStack.Screen name="TermsAndConditionsModal" component={TermsAndConditionsModal} options={{ title: 'Terms & Conditions', headerBackTitleVisible: false, headerTintColor: '#fff' }} />
+      <AuthStack.Screen name="PrivacyPolicyModal" component={PrivacyPolicyModal} options={{ title: 'Privacy Policy', headerBackTitleVisible: false, headerTintColor: '#fff' }} />
     </AuthStack.Navigator>
   );
 }

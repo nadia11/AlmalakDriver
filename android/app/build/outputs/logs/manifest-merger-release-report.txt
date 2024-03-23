@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:1:1-135:12
-INJECTED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:1:1-135:12
-INJECTED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:1:1-135:12
-INJECTED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:1:1-135:12
+ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:1:1-137:12
+INJECTED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:1:1-137:12
+INJECTED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:1:1-137:12
+INJECTED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:1:1-137:12
 MERGED from [:react-native-push-notification] F:\UderDriver\node_modules\react-native-push-notification\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-vector-icons] F:\UderDriver\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-async-storage_async-storage] F:\UderDriver\node_modules\@react-native-async-storage\async-storage\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-7:12
@@ -115,20 +115,20 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\Nadia Tabassum\.gradle\caches\
 MERGED from [com.android.installreferrer:installreferrer:1.1.2] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\7159fdde894990131f3ba6437117d8d3\transformed\jetified-installreferrer-1.1.2\AndroidManifest.xml:2:1-13:12
 MERGED from [com.facebook.fresco:fbcore:2.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\3dabfe528f47c92f00a64fe4949065d1\transformed\jetified-fbcore-2.5.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\ea88610a3c8be13450373fa73372379b\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:1:1-135:12
-INJECTED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:1:1-135:12
-INJECTED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:1:1-135:12
+INJECTED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:1:1-137:12
+INJECTED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:1:1-137:12
+INJECTED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:1:1-137:12
 	package
 		INJECTED from F:\UderDriver\android\app\src\main\AndroidManifest.xml
-		ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:1:1-135:12
+		ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:1:1-137:12
 		INJECTED from F:\UderDriver\android\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from F:\UderDriver\android\app\src\main\AndroidManifest.xml
-		ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:1:1-135:12
+		ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:1:1-137:12
 		INJECTED from F:\UderDriver\android\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from F:\UderDriver\android\app\src\main\AndroidManifest.xml
-		ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:1:1-135:12
+		ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:1:1-137:12
 		INJECTED from F:\UderDriver\android\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:1:11-69
@@ -343,7 +343,7 @@ MERGED from [androidx.work:work-runtime:2.7.1] C:\Users\Nadia Tabassum\.gradle\c
 	android:name
 		ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:65:19-75
 application
-ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:67:5-134:19
+ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:67:5-136:19
 MERGED from [:react-native-community_datetimepicker] F:\UderDriver\node_modules\@react-native-community\datetimepicker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:7:5-20
 MERGED from [:react-native-community_datetimepicker] F:\UderDriver\node_modules\@react-native-community\datetimepicker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:7:5-20
 MERGED from [:react-native-image-picker] F:\UderDriver\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:7:5-17:19
@@ -429,7 +429,9 @@ MERGED from [com.android.installreferrer:installreferrer:1.1.2] C:\Users\Nadia T
 	android:name
 		ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:68:7-38
 activity#com.uderdriverapp.MainActivity
-ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:91:7-102:14
+ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:91:7-104:14
+	android:screenOrientation
+		ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:98:3-39
 	android:label
 		ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:93:9-41
 	android:launchMode
@@ -443,21 +445,21 @@ ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:91:7-102:14
 	android:name
 		ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:92:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:98:4-101:20
+ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:100:4-103:20
 action#android.intent.action.MAIN
-ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:99:5-57
+ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:101:5-57
 	android:name
-		ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:99:13-54
+		ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:101:13-54
 category#android.intent.category.LAUNCHER
-ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:100:5-65
+ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:102:5-65
 	android:name
-		ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:100:15-62
+		ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:102:15-62
 meta-data#com.google.android.geo.API_KEY
-ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:132:4-118
+ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:134:4-118
 	android:value
-		ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:132:61-116
+		ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:134:61-116
 	android:name
-		ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:132:15-60
+		ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:134:15-60
 uses-sdk
 INJECTED from F:\UderDriver\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\UderDriver\android\app\src\main\AndroidManifest.xml
