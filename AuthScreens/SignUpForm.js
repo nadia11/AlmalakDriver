@@ -56,7 +56,7 @@ export const SignUpForm = (props) => {
   const [referralMobile, setReferralMobile] = React.useState('');
   // const [userPhoto, setUserPhoto] = React.useState('');
   const [userImage, setUserImage] = React.useState(null);
-  const [uploadedImage, setUploadedImage] = React.useState(false);
+  const [uploadedImage, setUploadedImage] = React.useState({});
   const [uploadImageModal, setUploadImageModal] =  React.useState(false);
   const [mobile, setMobile] = React.useState('');
 
@@ -200,7 +200,7 @@ export const SignUpForm = (props) => {
       } 
       else {
         //console.log("uri: "+ response.uri + ", filename: "+response.fileName + ", fileSize: "+response.fileSize + ", width: "+response.width + ", height: "+response.height + ", type: " + response.type + ", base64: "+ response.base64);
-        setUserImage(response.uri);
+        setUserImage(response?.assets[0]?.base64);
         setUploadedImage(response);
       }
     });
@@ -248,15 +248,15 @@ export const SignUpForm = (props) => {
       } 
       else {
         //console.log("uri: "+ response.uri + ", filename: "+response.fileName + ", fileSize: "+response.fileSize + ", width: "+response.width + ", height: "+response.height + ", type: " + response.type + ", base64: "+ response.base64);
-        setUserImage(response.uri);
+        setUserImage(response?.assets[0]?.base64);
         setUploadedImage(response);
       }
     });
   }
 
   const _disabledBtn = () => {
-    let fields = fullName && email && password && gender && dateOfBirth && nationalId;
-    return fields !== '' ? 0 : 1;
+    let fields = fullName && email && password && gender && dateOfBirth && nationalId && userImage;
+    return (fields ===null || fields === undefined || fields === "") ? 1 : 0;
   }
   
   return (
