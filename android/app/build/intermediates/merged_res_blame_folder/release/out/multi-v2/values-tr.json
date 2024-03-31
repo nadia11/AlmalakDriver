@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.uderdriverapp-mergeReleaseResources-33:/values-tr/values-tr.xml",
+            "outputFile": "com.uderdriver.almalak.app-mergeReleaseResources-33:/values-tr/values-tr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Nadia Tabassum\\.gradle\\caches\\transforms-3\\4e9e7aa2d3cb9cba6832ceb517e3ab0b\\transformed\\jetified-play-services-base-18.2.0\\res\\values-tr\\values.xml",

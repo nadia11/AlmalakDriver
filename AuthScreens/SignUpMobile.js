@@ -36,6 +36,10 @@ export default class SignUpMobile extends Component {
         callingCode: '+880',
     },
     }
+    this.loginHeight = new Animated.Value(105);
+    this.keyboardHeight = new Animated.Value(0);
+    this.forwardArrowOpacity = new Animated.Value(0);
+    this.borderBottomWidth = new Animated.Value(0);
     this.getUserData();
   }
 
@@ -157,18 +161,7 @@ export default class SignUpMobile extends Component {
     this.setState({stringOtpCode: OTP.toUpperCase()});
   }
 
-  UNSAFE_componentWillMount() {
-    
-  //   this.keyboardWillShowListener = Keyboard.addListener('keyboardWillShow', this.keyboardWillShow)
-  //   this.keyboardWillHideListener = Keyboard.addListener('keyboardWillHide', this.keyboardWillHide)
-  //   this.keyboardDidShowListener = Keyboard.addListener('keyboardDidShow', this.keyboardWillShow)
-  //   this.keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', this.keyboardWillHide)
-    
-    this.loginHeight = new Animated.Value(150);
-    this.keyboardHeight = new Animated.Value(0);
-    this.forwardArrowOpacity = new Animated.Value(0);
-    this.borderBottomWidth = new Animated.Value(0);
-  }
+
   componentDidUpdate(prevProps, prevState) {
     // Check if yourVariable is set
     if (this.state.otpId !== prevState.otpId)  {
@@ -316,7 +309,7 @@ export default class SignUpMobile extends Component {
               </TouchableOpacity>
             </Animated.View>
 
-            <Text style={{ fontSize: 12, lineHeight: 20, color: '#666', paddingVertical: 10, paddingHorizontal: 30, textAlign: 'center', marginTop: 5 }}>By tapping continue, I confirm that I have read and agree to the <Text style={styles.hyperLinkText} onPress={()=> this.props.navigation.navigate('TermsAndConditionsModal') }>Terms & Conditions</Text> and <Text style={styles.hyperLinkText} onPress={()=> this.props.navigation.navigate('PrivacyPolicyModal') }>
+            <Text style={{ fontSize: 12, lineHeight: 20, color: '#666', paddingVertical: 10, paddingHorizontal: 30, textAlign: 'center', marginTop: 30 }}>By tapping continue, I confirm that I have read and agree to the <Text style={styles.hyperLinkText} onPress={()=> this.props.navigation.navigate('TermsAndConditionsModal') }>Terms & Conditions</Text> and <Text style={styles.hyperLinkText} onPress={()=> this.props.navigation.navigate('PrivacyPolicyModal') }>
               Privacy Policy</Text> of Uder
             </Text>
           </Animatable.View>{ /*Bottom Part*/ }

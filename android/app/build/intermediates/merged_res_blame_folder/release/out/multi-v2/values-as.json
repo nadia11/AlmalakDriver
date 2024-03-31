@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.uderdriverapp-mergeReleaseResources-33:/values-as/values-as.xml",
+            "outputFile": "com.uderdriver.almalak.app-mergeReleaseResources-33:/values-as/values-as.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Nadia Tabassum\\.gradle\\caches\\transforms-3\\c79493a5237e4ac851f05b99d295947e\\transformed\\jetified-firebase-messaging-21.1.0\\res\\values-as\\values.xml",

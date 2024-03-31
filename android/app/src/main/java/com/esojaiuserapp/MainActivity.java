@@ -1,4 +1,4 @@
-package com.uderdriverapp;
+package com.uderdriver.almalak;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

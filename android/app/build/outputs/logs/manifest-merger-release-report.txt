@@ -428,7 +428,7 @@ MERGED from [com.android.installreferrer:installreferrer:1.1.2] C:\Users\Nadia T
 		ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:78:4-39
 	android:name
 		ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:68:7-38
-activity#com.uderdriverapp.MainActivity
+activity#com.uderdriver.almalak.MainActivity
 ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:91:7-104:14
 	android:screenOrientation
 		ADDED from F:\UderDriver\android\app\src\main\AndroidManifest.xml:98:3-39

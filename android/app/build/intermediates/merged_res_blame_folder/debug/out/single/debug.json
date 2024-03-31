@@ -1,130 +1,130 @@
 [
     {
-        "merged": "com.uderdriverapp-merged_res-37:/mipmap-xxxhdpi_ic_launcher.jpg.flat",
-        "source": "com.uderdriverapp-main-39:/mipmap-xxxhdpi/ic_launcher.jpg"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/mipmap-xhdpi_ic_launcher.jpg.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/mipmap-xhdpi/ic_launcher.jpg"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/drawable-xxxhdpi_ic_notification.png.flat",
-        "source": "com.uderdriverapp-main-39:/drawable-xxxhdpi/ic_notification.png"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/mipmap-xxhdpi_splash_icon.png.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/mipmap-xxhdpi/splash_icon.png"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/drawable_rn_edit_text_material.xml.flat",
-        "source": "com.uderdriverapp-main-39:/drawable/rn_edit_text_material.xml"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/mipmap-xxxhdpi_splash_icon.png.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/mipmap-xxxhdpi/splash_icon.png"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "com.uderdriverapp-main-39:/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/drawable_background_splash.xml.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/drawable/background_splash.xml"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/mipmap-mdpi_ic_launcher.jpg.flat",
-        "source": "com.uderdriverapp-main-39:/mipmap-mdpi/ic_launcher.jpg"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/drawable-xxxhdpi_ic_notification.png.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/drawable-xxxhdpi/ic_notification.png"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "com.uderdriverapp-main-39:/mipmap-xxhdpi/ic_launcher_foreground.png"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/mipmap-xhdpi_ic_launcher.jpg.flat",
-        "source": "com.uderdriverapp-main-39:/mipmap-xhdpi/ic_launcher.jpg"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "com.uderdriverapp-main-39:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/raw_pew.aac.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/raw/pew.aac"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/drawable-hdpi_ic_notification.png.flat",
-        "source": "com.uderdriverapp-main-39:/drawable-hdpi/ic_notification.png"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/drawable-mdpi_ic_notification.png.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/drawable-mdpi/ic_notification.png"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "com.uderdriverapp-main-39:/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/drawable-mdpi_ic_notification.png.flat",
-        "source": "com.uderdriverapp-main-39:/drawable-mdpi/ic_notification.png"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/drawable-hdpi_ic_notification.png.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/drawable-hdpi/ic_notification.png"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/xml_react_native_config.xml.flat",
-        "source": "com.uderdriverapp-debug-38:/xml/react_native_config.xml"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/raw_beep.mp3.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/raw/beep.mp3"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/mipmap-xxhdpi_ic_launcher.jpg.flat",
-        "source": "com.uderdriverapp-main-39:/mipmap-xxhdpi/ic_launcher.jpg"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/mipmap-mdpi_splash_icon.png.flat",
-        "source": "com.uderdriverapp-main-39:/mipmap-mdpi/splash_icon.png"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/drawable-xxhdpi_ic_notification.png.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/drawable-xxhdpi/ic_notification.png"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/raw_uber_ringtone.mp3.flat",
-        "source": "com.uderdriverapp-main-39:/raw/uber_ringtone.mp3"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/mipmap-xxhdpi_ic_launcher.jpg.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/mipmap-xxhdpi/ic_launcher.jpg"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/mipmap-xxhdpi_splash_icon.png.flat",
-        "source": "com.uderdriverapp-main-39:/mipmap-xxhdpi/splash_icon.png"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/mipmap-xxxhdpi_ic_launcher.jpg.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/mipmap-xxxhdpi/ic_launcher.jpg"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "com.uderdriverapp-main-39:/mipmap-mdpi/ic_launcher_foreground.png"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/xml_network_security_config.xml.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/xml/network_security_config.xml"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/xml_network_security_config.xml.flat",
-        "source": "com.uderdriverapp-main-39:/xml/network_security_config.xml"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/raw_uber_ringtone.mp3.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/raw/uber_ringtone.mp3"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/drawable_background_splash.xml.flat",
-        "source": "com.uderdriverapp-main-39:/drawable/background_splash.xml"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/mipmap-hdpi_splash_icon.png.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/mipmap-hdpi/splash_icon.png"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/raw_beep.mp3.flat",
-        "source": "com.uderdriverapp-main-39:/raw/beep.mp3"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/drawable-xhdpi_ic_notification.png.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/drawable-xhdpi/ic_notification.png"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/drawable-xxhdpi_ic_notification.png.flat",
-        "source": "com.uderdriverapp-main-39:/drawable-xxhdpi/ic_notification.png"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/mipmap-mdpi_ic_launcher.jpg.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/mipmap-mdpi/ic_launcher.jpg"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "com.uderdriverapp-main-39:/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/drawable_rn_edit_text_material.xml.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/drawable/rn_edit_text_material.xml"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "com.uderdriverapp-main-39:/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/drawable-xhdpi_ic_notification.png.flat",
-        "source": "com.uderdriverapp-main-39:/drawable-xhdpi/ic_notification.png"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/raw_super_ringtone.mp3.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/raw/super_ringtone.mp3"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/raw_pew.aac.flat",
-        "source": "com.uderdriverapp-main-39:/raw/pew.aac"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/mipmap-xhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/mipmap-hdpi_splash_icon.png.flat",
-        "source": "com.uderdriverapp-main-39:/mipmap-hdpi/splash_icon.png"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/mipmap-xxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "com.uderdriverapp-main-39:/mipmap-hdpi/ic_launcher_foreground.png"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/xml_react_native_config.xml.flat",
+        "source": "com.uderdriver.almalak.app-debug-38:/xml/react_native_config.xml"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "com.uderdriverapp-main-39:/mipmap-xhdpi/ic_launcher_foreground.png"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/mipmap-xhdpi_splash_icon.png.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/mipmap-xhdpi/splash_icon.png"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/mipmap-xxxhdpi_splash_icon.png.flat",
-        "source": "com.uderdriverapp-main-39:/mipmap-xxxhdpi/splash_icon.png"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/mipmap-mdpi_splash_icon.png.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/mipmap-mdpi/splash_icon.png"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/raw_super_ringtone.mp3.flat",
-        "source": "com.uderdriverapp-main-39:/raw/super_ringtone.mp3"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/mipmap-xxxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "com.uderdriverapp-main-39:/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/mipmap-mdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "com.uderdriverapp-merged_res-37:/mipmap-xhdpi_splash_icon.png.flat",
-        "source": "com.uderdriverapp-main-39:/mipmap-xhdpi/splash_icon.png"
+        "merged": "com.uderdriver.almalak.app-merged_res-37:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.uderdriver.almalak.app-main-39:/mipmap-mdpi/ic_launcher_round.png"
     }
 ]

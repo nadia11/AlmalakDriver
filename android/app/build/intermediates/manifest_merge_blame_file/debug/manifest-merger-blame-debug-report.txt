@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.uderdriverapp"
-4    android:versionCode="2"
-5    android:versionName="2.0" >
+3    package="com.uderdriver.almalak"
+4    android:versionCode="3"
+5    android:versionName="2.0.1" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
@@ -228,7 +228,7 @@
 100
 101    <application
 101-->F:\UderDriver\android\app\src\main\AndroidManifest.xml:67:5-136:19
-102        android:name="com.uderdriverapp.MainApplication"
+102        android:name="com.uderdriver.almalak.MainApplication"
 102-->F:\UderDriver\android\app\src\main\AndroidManifest.xml:68:7-38
 103        android:allowBackup="false"
 103-->F:\UderDriver\android\app\src\main\AndroidManifest.xml:72:7-34
@@ -272,7 +272,7 @@
 127        -->
 128        <activity
 128-->F:\UderDriver\android\app\src\main\AndroidManifest.xml:91:7-104:14
-129            android:name="com.uderdriverapp.MainActivity"
+129            android:name="com.uderdriver.almalak.MainActivity"
 129-->F:\UderDriver\android\app\src\main\AndroidManifest.xml:92:9-37
 130            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
 130-->F:\UderDriver\android\app\src\main\AndroidManifest.xml:94:9-118
@@ -336,7 +336,7 @@
 174-->[:react-native-image-picker] F:\UderDriver\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
 175            android:name="com.imagepicker.ImagePickerProvider"
 175-->[:react-native-image-picker] F:\UderDriver\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-63
-176            android:authorities="com.uderdriverapp.imagepickerprovider"
+176            android:authorities="com.uderdriver.almalak.imagepickerprovider"
 176-->[:react-native-image-picker] F:\UderDriver\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-71
 177            android:exported="false"
 177-->[:react-native-image-picker] F:\UderDriver\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
@@ -361,7 +361,7 @@
 188-->[androidx.work:work-runtime:2.7.1] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\a93c68fb1d2792ca1942259f5092d83b\transformed\work-runtime-2.7.1\AndroidManifest.xml:31:9-39:20
 189            android:name="androidx.startup.InitializationProvider"
 189-->[androidx.work:work-runtime:2.7.1] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\a93c68fb1d2792ca1942259f5092d83b\transformed\work-runtime-2.7.1\AndroidManifest.xml:32:13-67
-190            android:authorities="com.uderdriverapp.androidx-startup"
+190            android:authorities="com.uderdriver.almalak.androidx-startup"
 190-->[androidx.work:work-runtime:2.7.1] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\a93c68fb1d2792ca1942259f5092d83b\transformed\work-runtime-2.7.1\AndroidManifest.xml:33:13-68
 191            android:exported="false" >
 191-->[androidx.work:work-runtime:2.7.1] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\a93c68fb1d2792ca1942259f5092d83b\transformed\work-runtime-2.7.1\AndroidManifest.xml:34:13-37
@@ -679,7 +679,7 @@
 357-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
 358            android:name="com.google.firebase.provider.FirebaseInitProvider"
 358-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
-359            android:authorities="com.uderdriverapp.firebaseinitprovider"
+359            android:authorities="com.uderdriver.almalak.firebaseinitprovider"
 359-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
 360            android:directBootAware="true"
 360-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43

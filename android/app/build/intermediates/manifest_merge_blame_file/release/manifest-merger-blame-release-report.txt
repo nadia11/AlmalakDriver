@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.uderdriverapp"
-4    android:versionCode="2"
-5    android:versionName="2.0" >
+3    package="com.uderdriver.almalak"
+4    android:versionCode="3"
+5    android:versionName="2.0.1" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
@@ -237,7 +237,7 @@
 107
 108    <application
 108-->F:\UderDriver\android\app\src\main\AndroidManifest.xml:67:5-136:19
-109        android:name="com.uderdriverapp.MainApplication"
+109        android:name="com.uderdriver.almalak.MainApplication"
 109-->F:\UderDriver\android\app\src\main\AndroidManifest.xml:68:7-38
 110        android:allowBackup="false"
 110-->F:\UderDriver\android\app\src\main\AndroidManifest.xml:72:7-34
@@ -276,7 +276,7 @@
 132
 133        <activity
 133-->F:\UderDriver\android\app\src\main\AndroidManifest.xml:91:7-104:14
-134            android:name="com.uderdriverapp.MainActivity"
+134            android:name="com.uderdriver.almalak.MainActivity"
 134-->F:\UderDriver\android\app\src\main\AndroidManifest.xml:92:9-37
 135            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
 135-->F:\UderDriver\android\app\src\main\AndroidManifest.xml:94:9-118
@@ -347,7 +347,7 @@
 186-->[:react-native-image-picker] F:\UderDriver\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:8:9-16:20
 187            android:name="com.imagepicker.ImagePickerProvider"
 187-->[:react-native-image-picker] F:\UderDriver\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-63
-188            android:authorities="com.uderdriverapp.imagepickerprovider"
+188            android:authorities="com.uderdriver.almalak.imagepickerprovider"
 188-->[:react-native-image-picker] F:\UderDriver\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:13-71
 189            android:exported="false"
 189-->[:react-native-image-picker] F:\UderDriver\node_modules\react-native-image-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-37
@@ -466,7 +466,7 @@
 253-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
 254            android:name="com.google.firebase.provider.FirebaseInitProvider"
 254-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
-255            android:authorities="com.uderdriverapp.firebaseinitprovider"
+255            android:authorities="com.uderdriver.almalak.firebaseinitprovider"
 255-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
 256            android:directBootAware="true"
 256-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\e6be34a917a14134e90e9ecd24a658c5\transformed\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
@@ -478,7 +478,7 @@
 259-->[androidx.work:work-runtime:2.7.1] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\a93c68fb1d2792ca1942259f5092d83b\transformed\work-runtime-2.7.1\AndroidManifest.xml:31:9-39:20
 260            android:name="androidx.startup.InitializationProvider"
 260-->[androidx.work:work-runtime:2.7.1] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\a93c68fb1d2792ca1942259f5092d83b\transformed\work-runtime-2.7.1\AndroidManifest.xml:32:13-67
-261            android:authorities="com.uderdriverapp.androidx-startup"
+261            android:authorities="com.uderdriver.almalak.androidx-startup"
 261-->[androidx.work:work-runtime:2.7.1] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\a93c68fb1d2792ca1942259f5092d83b\transformed\work-runtime-2.7.1\AndroidManifest.xml:33:13-68
 262            android:exported="false" >
 262-->[androidx.work:work-runtime:2.7.1] C:\Users\Nadia Tabassum\.gradle\caches\transforms-3\a93c68fb1d2792ca1942259f5092d83b\transformed\work-runtime-2.7.1\AndroidManifest.xml:34:13-37

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.uderdriverapp-mergeDebugResources-35:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.uderdriver.almalak.app-mergeDebugResources-35:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "F:\\UderDriver\\node_modules\\@react-native-community\\datetimepicker\\android\\build\\intermediates\\packaged_res\\debug\\values-night-v8\\values-night-v8.xml",

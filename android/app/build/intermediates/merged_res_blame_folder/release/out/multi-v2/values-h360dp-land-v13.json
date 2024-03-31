@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.uderdriverapp-mergeReleaseResources-33:/values-h360dp-land-v13/values-h360dp-land-v13.xml",
+            "outputFile": "com.uderdriver.almalak.app-mergeReleaseResources-33:/values-h360dp-land-v13/values-h360dp-land-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Nadia Tabassum\\.gradle\\caches\\transforms-3\\9300c7fc5aff0974f1ee709fb212c45e\\transformed\\material-1.1.0\\res\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",

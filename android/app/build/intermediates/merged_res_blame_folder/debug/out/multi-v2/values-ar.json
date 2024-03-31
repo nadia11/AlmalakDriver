@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.uderdriverapp-mergeDebugResources-35:/values-ar/values-ar.xml",
+            "outputFile": "com.uderdriver.almalak.app-mergeDebugResources-35:/values-ar/values-ar.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Nadia Tabassum\\.gradle\\caches\\transforms-3\\75e4635b66fa4e4e84e71b52579837ce\\transformed\\core-1.7.0\\res\\values-ar\\values-ar.xml",

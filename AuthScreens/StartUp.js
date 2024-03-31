@@ -41,7 +41,7 @@ export const StartUp = (props) => {
         <CustomStatusBar backgroundColor={Colors.BUTTON_COLOR} />
 
         <Animatable.View animation="zoomIn" iterationCount={1} style={{ height: 100, width: 100, alignItems: 'center', justifyContent: 'flex-start', marginBottom: 30 }}>
-          <Image style={{ height: 128, width: 128, resizeMode: 'contain' }} source={require('../assets/logo.png')} />
+          {/*<Image style={{ height: "100%", width: 350}} source={require('../assets/logo.png')} />*/}
         </Animatable.View>
 
         <View style={{ alignItems: 'center', justifyContent: 'center', marginBottom: 20 }}>

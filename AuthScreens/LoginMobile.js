@@ -35,6 +35,10 @@ export default class LoginMobile extends Component {
         callingCode: '+880',
       },
     }
+    this.loginHeight = new Animated.Value(160);
+    this.keyboardHeight = new Animated.Value(0);
+    this.forwardArrowOpacity = new Animated.Value(0);
+    this.borderBottomWidth = new Animated.Value(0);
     this.getUserData();
   }
 
@@ -142,29 +146,6 @@ export default class LoginMobile extends Component {
       OTP += digits[Math.floor(Math.random() * 10)]; 
     }
     this.setState({digitOtpCode: OTP}); 
-  }
-
-  // GENERATE_STRING_OTP = (length=10) => {
-  //   var string = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  //   let OTP = '';
-  //   for (let i = 0; i <length; i++ ) {
-  //     OTP += string[Math.floor(Math.random() * string.length)];
-  //   }
-  //   this.setState({stringOtpCode: OTP.toUpperCase()});
-  // }
-    
-
-componentWillMount() {
-    this.loginHeight = new Animated.Value(150)
-
-    //this.keyboardWillShowListener = Keyboard.addListener('keyboardWillShow', this.keyboardWillShow)
-    // this.keyboardWillHideListener = Keyboard.addListener('keyboardWillHide', this.keyboardWillHide)
-    // this.keyboardDidShowListener = Keyboard.addListener('keyboardDidShow', this.keyboardWillShow)
-    // this.keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', this.keyboardWillHide)
-  this.loginHeight = new Animated.Value(150);
-  this.keyboardHeight = new Animated.Value(0);
-  this.forwardArrowOpacity = new Animated.Value(0);
-  this.borderBottomWidth = new Animated.Value(0);
   }
 
   componentDidUpdate(prevProps, prevState) {
