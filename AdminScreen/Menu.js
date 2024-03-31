@@ -37,7 +37,7 @@ const MenuStack = createNativeStackNavigator();
 export default function MenuStackScreen() {
   return (
     <MenuStack.Navigator screenOptions={Options.APP_OPTIONS.SCREEN_OPTIONS}>
-      <MenuStack.Screen name="Menu" component={MenuScreen} options={{ headerShown: false }} />
+      <MenuStack.Screen name="MenuWelcome" component={MenuScreen} options={{ headerShown: false }} />
       <MenuStack.Screen name="myWallet" component={myWalletMenu} options={{ title: "My Wallet", headerRight: () => Options.APP_OPTIONS.HEADER_LOGO }} />
       <MenuStack.Screen name="recentTransaction" component={recentTransaction} options={{ headerShown: false }} />
       <MenuStack.Screen name="TripSummery" component={TripSummery} options={{ title: "Trip Summery", headerRight: () => Options.APP_OPTIONS.HEADER_LOGO }} />
