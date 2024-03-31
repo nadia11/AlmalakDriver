@@ -7,7 +7,7 @@ import { BASE_URL, SMS_API_URL } from '../../config/api';
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 const SCREEN_WIDTH = Dimensions.get('window').width;
 
-export default function manageDocuments({ route, navigation }) {
+export default function ManageDocuments({ route, navigation }) {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
 

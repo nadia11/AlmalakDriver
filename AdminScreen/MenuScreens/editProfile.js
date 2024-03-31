@@ -17,7 +17,7 @@ import { Colors } from '../../styles';
 import { BASE_URL, SMS_API_URL } from '../../config/api';
 import { Options } from '../../config';
 
-export default function editProfile(props) {
+export default function EditProfile(props) {
   const { navigation } = props;
   const [animating, setAnimating] = React.useState(false);
 

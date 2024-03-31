@@ -20,7 +20,7 @@ const latitudeDelta = 0.0922;
 const longitudeDelta= 0.0421;
 const default_region = { latitude: 23.8103, longitude: 90.4125, latitudeDelta: 0.0922, longitudeDelta: 0.0421 };
 
-export default class agentLocator extends Component {
+export default class AgentLocator extends Component {
   constructor(props) {
     super(props);
     this.state = {

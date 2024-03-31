@@ -14,19 +14,28 @@ const HistoryStack = createNativeStackNavigator();
 export default function HistoryStackScreen() {
   return (
     <HistoryStack.Navigator screenOptions={Options.APP_OPTIONS.SCREEN_OPTIONS}>
-      <HistoryStack.Screen name="createTopTabs" component={createTopTabs} options={{ title: "History", headerTintColor: '#fff', headerBackTitleVisible: false, headerRight: () => Options.APP_OPTIONS.HEADER_LOGO }} />
+      <HistoryStack.Screen name="createTopTabs" component={CreateTopTabs} options={{ title: "History", headerTintColor: '#fff', headerBackTitleVisible: false, headerRight: () => Options.APP_OPTIONS.HEADER_LOGO }} />
       <HistoryStack.Screen name="TripDetails" component={TripDetails} options={{ title: "Trip Details", headerBackTitleVisible: false,  headerRight: () => Options.APP_OPTIONS.HEADER_LOGO }} />
     </HistoryStack.Navigator>
   );
 }
 
 const MaterialTopTab = createMaterialTopTabNavigator();
-function createTopTabs() {
+function CreateTopTabs() {
   return(
-    <MaterialTopTab.Navigator tabBarOptions={{labelStyle: { fontSize: 12 }, style: { backgroundColor: '#fff' } }} activeTintColor="#EF0C14" indicatorStyle="#EF0C14" inactiveTintColor="#31455A" pressColor="#EF0C14">
-      <MaterialTopTab.Screen name="Trips" component={TripsHistory} />
-      <MaterialTopTab.Screen name="Food" component={FoodHistory} />
-      <MaterialTopTab.Screen name="Parcel" component={ParcelHistory} />
-    </MaterialTopTab.Navigator>
+      <MaterialTopTab.Navigator
+          screenOptions={{
+              tabBarLabelStyle: { fontSize: 12 }, // Moved inside screenOptions
+              tabBarStyle: { backgroundColor: '#fff' }, // Moved inside screenOptions
+              tabBarActiveTintColor: "#EF0C14", // Previously 'activeTintColor'
+              tabBarIndicatorStyle: { backgroundColor: "#EF0C14" }, // Correctly applied as an object
+              tabBarInactiveTintColor: "#31455A", // Previously 'inactiveTintColor'
+          }}
+      >
+          <MaterialTopTab.Screen name="Trips" component={TripsHistory} />
+          <MaterialTopTab.Screen name="Food" component={FoodHistory} />
+          <MaterialTopTab.Screen name="Parcel" component={ParcelHistory} />
+      </MaterialTopTab.Navigator>
+
   )
 }

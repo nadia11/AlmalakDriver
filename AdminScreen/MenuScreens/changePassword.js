@@ -11,7 +11,7 @@ import { BASE_URL, SMS_API_URL } from '../../config/api';
 import { Options } from '../../config';
 
 
-export default function changePassword(props) {
+export default function ChangePassword(props) {
   const [showPass, setShowPass] = React.useState(true);
   const [press, setPress] = React.useState(false);
   const [animating, setAnimating] = React.useState(false);

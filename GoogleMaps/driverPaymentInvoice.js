@@ -13,7 +13,7 @@ const SCREEN_HEIGHT = Dimensions.get('window').height;
 const SCREEN_WIDTH = Dimensions.get('window').width;
 
 
-export default function driverPaymentInvoice(props)
+export default function DriverPaymentInvoice(props)
 {
   // const email = '';
   // const tripNumber = 'TRHZKK7G0D0A';

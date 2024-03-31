@@ -165,7 +165,7 @@ export const MenuScreen = (props) => {
         </TouchableOpacity> */}
 
         <TouchableOpacity onPress={() => navigation.navigate('Coupons') } style={styles.listItem}>
-          <Ionicons name="md-pricetags" size={20} color={Colors.ICON_COLOR} style={styles.leftIcon} />
+          <Ionicons name="pricetags" size={20} color={Colors.ICON_COLOR} style={styles.leftIcon} />
           <Text style={styles.listItemText}>Coupons</Text>
           <Feather name="chevron-right" size={15} color={Colors.TEXT_PRIMARY} style={styles.rightIcon} />
         </TouchableOpacity>
@@ -186,7 +186,7 @@ export const MenuScreen = (props) => {
         <Text style={styles.separator}>SETTINGS</Text>
 
         <TouchableOpacity onPress={() => navigation.navigate('Language', {name: "Language Preference"}) } style={styles.listItem}>
-          <Ionicons name="md-globe" size={25} color={Colors.ICON_COLOR} style={styles.leftIcon} />
+          <Ionicons name="globe" size={25} color={Colors.ICON_COLOR} style={styles.leftIcon} />
           <Text style={styles.listItemText}>Language</Text>
           <Feather name="chevron-right" size={15} color={Colors.TEXT_PRIMARY} style={styles.rightIcon} />
         </TouchableOpacity>
@@ -201,13 +201,13 @@ export const MenuScreen = (props) => {
         <Text style={styles.separator}>HELP & SUPPORT</Text>
 
         <TouchableOpacity onPress={() => navigation.navigate('faq') } style={styles.listItem}>
-          <Ionicons name="ios-help-buoy" size={25} color={Colors.ICON_COLOR} style={styles.leftIcon} />
+          <Ionicons name="help-buoy" size={25} color={Colors.ICON_COLOR} style={styles.leftIcon} />
           <Text style={styles.listItemText}>Freequently Asked Questions</Text>
           <Feather name="chevron-right" size={15} color={Colors.TEXT_PRIMARY} style={styles.rightIcon} />
         </TouchableOpacity>
 
         <TouchableOpacity onPress={() => navigation.navigate('TermsAndConditions')} style={styles.listItem}>
-          <Ionicons name="ios-ribbon" size={25} color={Colors.ICON_COLOR} style={styles.leftIcon} />
+          <Ionicons name="ribbon" size={25} color={Colors.ICON_COLOR} style={styles.leftIcon} />
           <Text style={styles.listItemText}>Terms & Conditions</Text>
           <Feather name="chevron-right" size={15} color={Colors.TEXT_PRIMARY} style={styles.rightIcon} />
         </TouchableOpacity>
@@ -237,7 +237,7 @@ export const MenuScreen = (props) => {
         </TouchableOpacity>
 
         <TouchableOpacity onPress={ _handleSignOut } style={[styles.listItem, {marginTop: 10}]}>
-          <Ionicons name="md-exit" size={25} color={Colors.ICON_COLOR} style={styles.leftIcon} />
+          <Ionicons name="exit" size={25} color={Colors.ICON_COLOR} style={styles.leftIcon} />
           <Text style={{color: 'red', fontSize: 16, fontFamily: Typography.PRIMARY_FONT_BOLD}}>Sign Out</Text>
           <Feather name="chevron-right" size={15} color={Colors.TEXT_PRIMARY} style={styles.rightIcon} />
         </TouchableOpacity>
