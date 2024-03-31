@@ -50,19 +50,24 @@ export default class AgentLocator extends Component {
     this.isLocationEnabled();
     this.getUserData();
 
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        const region = {
-          latitude: position.coords.latitude,
-          longitude: position.coords.longitude,
-          latitudeDelta: latitudeDelta,
-          longitudeDelta: longitudeDelta
-        }
-        this.setState({ region: region, userCurrentLocation: region, loading: false, error: null });
-      },
-      (error) => { geoErr(error); this.setState({ error: error.message, loading: false }) },
-      { enableHighAccuracy: enableHighAccuracy, timeout: 20000, maximumAge: 1000 },
-    );
+      navigator?.geolocation?.default?.getCurrentPosition(
+
+          (position) => {
+            const region = {
+              latitude: position.coords.latitude,
+              longitude: position.coords.longitude,
+              latitudeDelta: latitudeDelta,
+              longitudeDelta: longitudeDelta
+            }
+            this.setState({region: region, userCurrentLocation: region, loading: false, error: null});
+          },
+          (error) => {
+            geoErr(error);
+            this.setState({error: error.message, loading: false})
+          },
+          {enableHighAccuracy: enableHighAccuracy, timeout: 20000, maximumAge: 1000},
+      );
+
   }
 
   componentWillUnmount() {

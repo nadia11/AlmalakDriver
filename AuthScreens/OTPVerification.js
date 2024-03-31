@@ -25,7 +25,7 @@ export const OTPVerification = (props) => {
 
   const [counter, setCounter] = React.useState(59);
 
-  const [enteredOTP, setEnteredOTP] = React.useState(0);
+  const [enteredOTP, setEnteredOTP] = React.useState("");
   const [userToken, setUserToken] = React.useState(null);
   const [sMSReceived, setSMSReceived] = React.useState([]);
   const [animating, setAnimating] = React.useState(true);
@@ -42,71 +42,7 @@ export const OTPVerification = (props) => {
       verify_otp();
     }
   }, [enteredOTP]);
-  
 
-  // React.useEffect(() => {
-  //   SMSReceiver.requestReadSmsPermission();
-  // }, []);
-  
-
-  // const verify_otp = () => {
-  //   setAnimating(true);
-  //
-  //   if(OTP_CODE == enteredOTP) {
-  //     setOtpVerifyingSpinner(true);
-  //
-  //     setTimeout(() => {
-  //       setOtpVerifyingSpinner(false);
-  //       setOtpVerifySuccess(true);
-  //
-  //       setTimeout( async () => {
-  //         if(redirectScreen === "App"){
-  //           try {
-  //             await AsyncStorage.setItem('userToken', '1');
-  //             setUserToken('1');
-  //             signInToken(); /*This for auto redirect to home page & refresh*/
-  //             props.navigation.navigate('App');
-  //             setOtpVerifySuccess(false);
-  //           }
-  //           catch (error) { console.error(error); }
-  //         }
-  //         else if(redirectScreen === "SelectDivision"){
-  //           props.navigation.navigate('SelectDivision', { mobile: mobile });
-  //           setOtpVerifySuccess(false);
-  //         }
-  //
-  //         if(redirectScreen === "SignUpForm"){
-  //           props.navigation.navigate('SignUpForm', { mobile: mobile, OTP_CODE: enteredOTP })
-  //           setOtpVerifySuccess(false);
-  //         }
-  //       }, 500);
-  //     }, 3000);
-  //   }
-  //   else {
-  //     Alert.alert("Error", "Wrong OTP Code entered. Please Try Again");
-  //   }
-  // }
-  //
-  //
-  // const resendOTP = () => {
-  //   let sms_status_array = {1002 : "Sender Id/Masking Not Found", 1003 : "API Not Found", 1004 : "SPAM Detected", 1005 : "Internal Error", 1006 : "Internal Error", 1007 : "Balance Insufficient", 1008 : "Message is empty", 1009 : "Message Type Not Set (text/unicode)", 1010 : "Invalid User & Password", 1011 : "Invalid User Id" }
-  //
-  //   axios.post(SMS_API_URL, {
-  //     to_number: mobile,
-  //     message: "Your OTP is "+OTP_CODE+" to login Uder. This OTP will be expired within 1 minutes."
-  //   })
-  //   .then(res => {
-  //     if(sms_status_array[res.data]) {
-  //       Alert.alert(sms_status_array[res.data] + " Please contact to App Provider.");
-  //     }
-  //     setCounter(59);
-  //     ToastAndroid.showWithGravity("OTP Verification Code Sent again", ToastAndroid.LONG, ToastAndroid.BOTTOM);
-  //   })
-  //   .catch((error) => {
-  //     console.log("Submitting Error: "+error);
-  //     ToastAndroid.show(Options.APP_OPTIONS.NETWORK_ERROR_MESSAGE, ToastAndroid.SHORT);
-  //   });
-  // }
 
   const verify_otp = () => {
     setAnimating(true);
@@ -202,7 +138,7 @@ export const OTPVerification = (props) => {
 		  autoCorrect={false} 
 		  underlineColorAndroid="transparent" 
 		  onChangeText={val => setEnteredOTP( val )} 
-		  value={enteredOTP} 
+		  value={enteredOTP?.toString()||""}
           />
         </View>
 

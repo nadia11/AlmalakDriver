@@ -311,12 +311,12 @@ export const SignUpForm = (props) => {
             <View>
               <Feather name="lock" size={20} style={styles.inputIcon} />
               <TextInput style={styles.textinput} placeholder="Enter Password" placeholderTextColor="rgba(0,0,0,.5)" returnKeyType="go" autoCorrect={false} secureTextEntry={showPass} underlineColorAndroid="transparent" onChangeText={val => setPassword( val )} value={password} ref={passwordRef} onSubmitEditing={(event) => dobRef.current.focus()} />
-              <TouchableOpacity style={styles.btnEye} onPress={ _handleShowPassword }><Ionicons name={press == false ? 'md-eye' : 'md-eye-off'} size={30} color="rgba(0,0,0,0.7)"></Ionicons></TouchableOpacity>
+              <TouchableOpacity style={styles.btnEye} onPress={ _handleShowPassword }><Ionicons name={press == false ? 'eye' : 'eye-off'} size={20} color="rgba(0,0,0,0.7)"></Ionicons></TouchableOpacity>
             </View>
 
             <View style={{flexDirection: 'row'}}>
               <View>
-                <Ionicons name="md-transgender" size={20} style={styles.inputIcon} />
+                <Ionicons name="transgender" size={20} style={styles.inputIcon} />
                 <Picker selectedValue={gender} onValueChange={(itemValue, itemIndex) => setGender(itemValue)} style={[styles.textinput, {width: (SCREEN_WIDTH - 70)/2, marginRight: 10, elevation: 3, shadowColor: '#000', shadowOpacity: 1, shadowOffset: {x: 0, y: 0}, shadowRadius: 5}]}>
                   <Picker.Item label="--Select Gender--" value="" />
                   <Picker.Item label="Male" value="male" />
@@ -470,7 +470,7 @@ const styles = StyleSheet.create({
   btnEye: {
     position: 'absolute',
     right: 70,
-    top: 8,
+    top: 15,
   },
   hyperLinkText: {
     color: '#F53D3D',

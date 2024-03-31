@@ -57,7 +57,7 @@ export default function SelectVehicle(props) {
                   <TouchableOpacity style={[styles.vehicleListItem, (obj.id === vehicleType ? styles.vehicleListItemActive : "")]} key={index} onPress={() => {setVehicleType(obj.id); }}>
                       <FontAwesome5 style={styles.vehicleIcon} size={40} name={obj.icon} color={obj.color} />
                       <Text style={styles.title}>{obj.title.toLocaleUpperCase()}</Text>
-                      <Ionicons name="ios-arrow-forward" size={20} color="#aaa" style={styles.rightIcon} />
+                      <Ionicons name="arrow-forward" size={20} color="#aaa" style={styles.rightIcon} />
                   </TouchableOpacity>
                 )
             })}
