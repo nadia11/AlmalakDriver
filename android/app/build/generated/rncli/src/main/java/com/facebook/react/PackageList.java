@@ -23,7 +23,7 @@ import com.reactcommunity.rndatetimepicker.RNDateTimePickerPackage;
 import com.reactnativecommunity.geolocation.GeolocationPackage;
 // @react-native-community/netinfo
 import com.reactnativecommunity.netinfo.NetInfoPackage;
-// @react-native-community/picker
+// @react-native-picker/picker
 import com.reactnativecommunity.picker.RNCPickerPackage;
 // @react-native-masked-view/masked-view
 import org.reactnative.maskedview.RNCMaskedViewPackage;

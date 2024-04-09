@@ -7,7 +7,7 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import axios from 'axios';
 import DateTimePicker from '@react-native-community/datetimepicker';
 import moment from 'moment';
-import { Picker } from '@react-native-community/picker';
+import { Picker } from '@react-native-picker/picker';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
 
@@ -331,7 +331,7 @@ export const SignUpForm = (props) => {
             </View>
 
             {show && (
-              <DateTimePicker testID="dateTimePicker" timeZoneOffsetInMinutes={0} display="default" 
+              <DateTimePicker testID="dateTimePicker" timeZoneOffsetInMinutes={0} display="spinner" 
               value={date} mode={mode} onChange={setDateOnChange}
               is24Hour={false} dateFormat={"dayofweek day month"} firstDayOfWeek="Saturday"
               minimumDate={new Date().setFullYear(new Date().getFullYear()-100)} maximumDate={new Date()}

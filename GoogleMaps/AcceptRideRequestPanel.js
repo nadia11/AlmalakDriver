@@ -3,7 +3,7 @@ import { StyleSheet, Text, TextInput, View, TouchableOpacity, Dimensions, Activi
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import Ionicons from "react-native-vector-icons/Ionicons";
-import {Picker} from '@react-native-community/picker';
+import {Picker} from '@react-native-picker/picker';
 import { Rating } from 'react-native-elements';
 import Modal from 'react-native-modal';
 import axios from 'axios';

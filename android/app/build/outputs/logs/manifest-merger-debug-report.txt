@@ -15,7 +15,7 @@ MERGED from [:react-native-community_checkbox] F:\UderDriver\node_modules\@react
 MERGED from [:react-native-community_datetimepicker] F:\UderDriver\node_modules\@react-native-community\datetimepicker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_geolocation] F:\UderDriver\node_modules\@react-native-community\geolocation\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-community_netinfo] F:\UderDriver\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-10:12
-MERGED from [:react-native-community_picker] F:\UderDriver\node_modules\@react-native-community\picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-picker_picker] F:\UderDriver\node_modules\@react-native-picker\picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-masked-view_masked-view] F:\UderDriver\node_modules\@react-native-masked-view\masked-view\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-android-location-enabler] F:\UderDriver\node_modules\react-native-android-location-enabler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-contacts] F:\UderDriver\node_modules\react-native-contacts\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
@@ -516,8 +516,8 @@ MERGED from [:react-native-community_geolocation] F:\UderDriver\node_modules\@re
 MERGED from [:react-native-community_geolocation] F:\UderDriver\node_modules\@react-native-community\geolocation\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-community_netinfo] F:\UderDriver\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-community_netinfo] F:\UderDriver\node_modules\@react-native-community\netinfo\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-community_picker] F:\UderDriver\node_modules\@react-native-community\picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:react-native-community_picker] F:\UderDriver\node_modules\@react-native-community\picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-picker_picker] F:\UderDriver\node_modules\@react-native-picker\picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:react-native-picker_picker] F:\UderDriver\node_modules\@react-native-picker\picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-masked-view_masked-view] F:\UderDriver\node_modules\@react-native-masked-view\masked-view\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-masked-view_masked-view] F:\UderDriver\node_modules\@react-native-masked-view\masked-view\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:react-native-android-location-enabler] F:\UderDriver\node_modules\react-native-android-location-enabler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44

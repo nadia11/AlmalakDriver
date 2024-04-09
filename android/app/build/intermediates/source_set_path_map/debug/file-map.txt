@@ -43,8 +43,8 @@ com.uderdriver.almalak.app-packaged_res-41 F:\UderDriver\node_modules\@react-nat
 com.uderdriver.almalak.app-packaged_res-42 F:\UderDriver\node_modules\@react-native-community\datetimepicker\android\build\intermediates\packaged_res\debug
 com.uderdriver.almalak.app-packaged_res-43 F:\UderDriver\node_modules\@react-native-community\geolocation\android\build\intermediates\packaged_res\debug
 com.uderdriver.almalak.app-packaged_res-44 F:\UderDriver\node_modules\@react-native-community\netinfo\android\build\intermediates\packaged_res\debug
-com.uderdriver.almalak.app-packaged_res-45 F:\UderDriver\node_modules\@react-native-community\picker\android\build\intermediates\packaged_res\debug
-com.uderdriver.almalak.app-packaged_res-46 F:\UderDriver\node_modules\@react-native-masked-view\masked-view\android\build\intermediates\packaged_res\debug
+com.uderdriver.almalak.app-packaged_res-45 F:\UderDriver\node_modules\@react-native-masked-view\masked-view\android\build\intermediates\packaged_res\debug
+com.uderdriver.almalak.app-packaged_res-46 F:\UderDriver\node_modules\@react-native-picker\picker\android\build\intermediates\packaged_res\debug
 com.uderdriver.almalak.app-packaged_res-47 F:\UderDriver\node_modules\react-native-android-location-enabler\android\build\intermediates\packaged_res\debug
 com.uderdriver.almalak.app-packaged_res-48 F:\UderDriver\node_modules\react-native-contacts\android\build\intermediates\packaged_res\debug
 com.uderdriver.almalak.app-packaged_res-49 F:\UderDriver\node_modules\react-native-device-info\android\build\intermediates\packaged_res\debug

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, View, TouchableOpacity, Dimensions, ActivityIndicator, Alert, Image } from "react-native";
-import {Picker} from '@react-native-community/picker';
+import {Picker} from '@react-native-picker/picker';
 
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 const SCREEN_WIDTH = Dimensions.get('window').width;

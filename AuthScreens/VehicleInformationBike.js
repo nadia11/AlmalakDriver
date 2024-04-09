@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, View, TouchableOpacity, Dimensions, ActivityIndicator, Alert, TextInput, SafeAreaView, ScrollView, Platform } from "react-native";
-import { Picker } from '@react-native-community/picker';
+import { Picker } from '@react-native-picker/picker';
 import DateTimePicker from '@react-native-community/datetimepicker';
 import moment from 'moment';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -157,7 +157,7 @@ export default class VehicleInformation extends Component{
             <TextInput style={styles.textInput} placeholder="Enter Token Renewal Date" placeholderTextColor="rgba(0,0,0,.5)" returnKeyType="go" autoCorrect={false} onChangeText={val => this.setState({tax_renewal_date: val})} value={this.state.tax_renewal_date ? moment(this.state.tax_renewal_date).format('DD/MM/YYYY') : ""} onFocus={() => this.setState({tokenDatePickerShow: true})} ref={this.taxRenewalDateRef} onSubmitEditing={() => this.insuranceNumberRef.current.focus()} />
 
             {this.state.tokenDatePickerShow === true && 
-              <DateTimePicker testID="dateTimePicker" timeZoneOffsetInMinutes={0} display="default" 
+              <DateTimePicker testID="dateTimePicker" timeZoneOffsetInMinutes={0} display="spinner" 
               value={this.state.tokenDatePicker} mode="date" onChange={this.setTokenDateOnChange}
               is24Hour={false} dateFormat={"dayofweek day month"} firstDayOfWeek="Saturday"
               minimumDate={new Date().setFullYear(new Date().getFullYear()-3)} maximumDate={new Date().setFullYear(new Date().getFullYear()+5)}
@@ -175,7 +175,7 @@ export default class VehicleInformation extends Component{
             <TextInput style={styles.textInput} placeholder="Enter Insurance Renewal Date" placeholderTextColor="rgba(0,0,0,.5)" returnKeyType="go" autoCorrect={false} onChangeText={val => this.setState({insurance_renewal_date: val})} value={this.state.insurance_renewal_date ? moment(this.state.insurance_renewal_date).format('DD/MM/YYYY') : ""} onFocus={() => this.setState({insuranceDatePickerShow: true})} ref={this.insuranceRenewalDateRef} onSubmitEditing={() => this.fitnessCertificateRef.current.focus()} />
             
             {this.state.insuranceDatePickerShow === true && 
-              <DateTimePicker testID="dateTimePicker" timeZoneOffsetInMinutes={0} display="default" 
+              <DateTimePicker testID="dateTimePicker" timeZoneOffsetInMinutes={0} display="spinner" 
               value={this.state.insuranceDatePicker} mode="date" onChange={this.setInsuranceDateOnChange}
               is24Hour={false} dateFormat={"dayofweek day month"} firstDayOfWeek="Saturday"
               minimumDate={new Date().setFullYear(new Date().getFullYear()-3)} maximumDate={new Date().setFullYear(new Date().getFullYear()+5)}
