@@ -121,7 +121,7 @@ export default function TodaysSummery(props) {
 					</View>
 					<View style={styles.itemInner}>
 						<Text style={styles.itemTitle}>Total Earnings</Text>
-						<Text style={styles.itemContent}><MaterialCommunityIcons name="wallet-outline" size={20} color={Colors.PRIMARY} /> {Number(todaysEarnings).toFixed(2)} ৳</Text>
+						<Text style={styles.itemContent}><MaterialCommunityIcons name="wallet-outline" size={20} color={Colors.PRIMARY} /> {Number(todaysEarnings).toFixed(2)} LYD</Text>
 					</View>
 				</View>
 

@@ -169,31 +169,31 @@ export default function DriverPaymentInvoice(props)
 
         <View style={styles.row}>
           <Text style={[styles.itemName, {color: Colors.GREEN, fontWeight: 'bold'}]}>Total Fare</Text>
-          <Text style={[styles.itemValue, {color: Colors.GREEN}]}>৳{Number(fare).toFixed(2)}</Text>
+          <Text style={[styles.itemValue, {color: Colors.GREEN}]}>LYD{Number(fare).toFixed(2)}</Text>
         </View>
 
         <View style={styles.row}>
           <Text style={styles.itemName}>Promocode Discount</Text>
-          <Text style={styles.itemValue}>৳{Number(discountAmount).toFixed(2)}</Text>
+          <Text style={styles.itemValue}>LYD{Number(discountAmount).toFixed(2)}</Text>
         </View>
 
         <View style={styles.row}>
           <Text style={styles.itemName}>Delay Cancellation Fee</Text>
-          <Text style={styles.itemValue}>৳{Number(delayCancellationFee).toFixed(2)}</Text>
+          <Text style={styles.itemValue}>LYD{Number(delayCancellationFee).toFixed(2)}</Text>
         </View>
 
         <View style={styles.row}>
           <Text style={styles.itemName}>Destination Change Fee</Text>
-          <Text style={styles.itemValue}>৳{Number(destinationChangeFee).toFixed(2)}</Text>
+          <Text style={styles.itemValue}>LYD{Number(destinationChangeFee).toFixed(2)}</Text>
         </View>
           
         <View style={styles.row}>
           <Text style={[styles.itemName, {color: Colors.GREEN, fontWeight: 'bold'}]}>Payable Amount</Text>
-          <Text style={[styles.itemValue, {color: Colors.GREEN}]}>৳{Number(fare - discountAmount + delayCancellationFee + destinationChangeFee).toFixed(2)}</Text>
+          <Text style={[styles.itemValue, {color: Colors.GREEN}]}>LYD{Number(fare - discountAmount + delayCancellationFee + destinationChangeFee).toFixed(2)}</Text>
         </View>
 
         <View style={{backgroundColor: '#eee', padding: 15, marginTop: 30, width: SCREEN_WIDTH-60, marginLeft: 20}}>
-          <Text style={{fontSize: 30, textAlign: 'center', color: Colors.GREEN, fontWeight: 'bold'}}>৳{Number(fare - discountAmount + delayCancellationFee + destinationChangeFee).toFixed(2)}</Text>
+          <Text style={{fontSize: 30, textAlign: 'center', color: Colors.GREEN, fontWeight: 'bold'}}>LYD{Number(fare - discountAmount + delayCancellationFee + destinationChangeFee).toFixed(2)}</Text>
           <Text style={{fontSize: 20, textAlign: 'center', color: Colors.GREEN}}>Please Collect Cash</Text>
         </View>
       

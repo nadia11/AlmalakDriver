@@ -136,7 +136,7 @@ export default function AcceptRideRequestPanel(props)
         
         <View style={{backgroundColor: '#f4f4f4', paddingHorizontal: 20, paddingVertical: 10, marginBottom: 10}}>
           <Text style={{fontSize: 18, color: '#000'}}>Distance: <Text style={{fontWeight: 'bold', color: 'red', fontSize: 18}}>{distance}</Text></Text>
-          <Text style={{fontSize: 18, color: '#000'}}>Total Fare: <Text style={{fontWeight: 'bold', color: 'red', fontSize: 18}}>৳{Number(fare).toFixed(2)}</Text></Text>
+          <Text style={{fontSize: 18, color: '#000'}}>Total Fare: <Text style={{fontWeight: 'bold', color: 'red', fontSize: 18}}>LYD{Number(fare).toFixed(2)}</Text></Text>
         </View>
 
         <View style={{flexDirection: 'row', justifyContent: 'center', marginBottom: 10}}>
