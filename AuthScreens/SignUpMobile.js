@@ -239,7 +239,8 @@ export default class SignUpMobile extends Component {
   }
 
   disabledBtn = () => {
-    let length = this.state.mobileNumber.charAt(0) == 0 ? length = 11 : length = 10;
+    //let length = this.state.mobileNumber.charAt(0) == 0 ? length = 11 : length = 10;
+    let length = this.state.mobileNumber.charAt(0) == '0' ? 11 : Math.max(this.state.mobileNumber.length, 9);
     return this.state.mobileNumber && this.state.mobileNumber.length.toString() == length ? 0 : 1;
   }
 

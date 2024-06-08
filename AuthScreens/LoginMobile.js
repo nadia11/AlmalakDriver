@@ -11,6 +11,7 @@ import { BASE_URL, SMS_API_URL } from '../config/api';
 import { Colors } from '../styles';
 import { Options } from '../config';
 import {AuthContext} from "./context";
+import CountryPickerModal from "./CountryPickerModal";
 
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 const SCREEN_WIDTH = Dimensions.get('window').width;
@@ -227,10 +228,15 @@ export default class LoginMobile extends Component {
   }
 
   disabledBtn = () => {
-    let length = this.state.mobileNumber.charAt(0) == 0 ? length = 11 : length = 10;
+    //let length = this.state.mobileNumber.charAt(0) == 0 ? length = 11 : length = 10;
+    let length = this.state.mobileNumber.charAt(0) == '0' ? 11 : Math.max(this.state.mobileNumber.length, 9);
+
     return this.state.mobileNumber && this.state.mobileNumber.length.toString() == length ? 0 : 1;
   }
 
+  handelSelect = (callingCode, flag) => {
+    this.setState({ country: {callingCode: "+"+callingCode} });
+  }
   render() {
     const { signInToken } = this.context;
     const headerTextOpacity = this.loginHeight.interpolate({
@@ -278,15 +284,14 @@ export default class LoginMobile extends Component {
             </Animated.View>
 
             <TouchableOpacity onPress={() => {}}>
-              <Animatable.View style={{ marginTop: marginTop, paddingHorizontal: 25, flexDirection: 'row' }}>
+              <Animated.View style={{ marginTop: marginTop, paddingHorizontal: 25, flexDirection: 'row' }}>
                 <Animated.Text style={{ fontSize: 18, color: '#333', fontWeight: '500', position: 'absolute', bottom: 40, left: titleTextLeft, opacity: titleTextOpacity }}>Enter Your Mobile Number</Animated.Text>
 
                 <Animated.View style={{ flex: 1, flexDirection: 'row', alignItems: 'center' }}>
-                  <Image style={styles.flag} source={require('../assets/bangladesh-flag.png')} />
-                  <Text style={{ fontSize: 18, paddingHorizontal: 10 }} onPress={ () => alert('Country Selector') }>{this.state.country.callingCode}</Text>
+                  <CountryPickerModal initialCode={this.state.country.callingCode} handelSelect={(callingCode, flag) => this.handelSelect(callingCode, flag)} />
                   <TextInput keyboardType="numeric" style={styles.textInput} placeholderTextColor='#444' placeholder={this.state.placeholderText} underlineColorAndroid="transparent" onChangeText={val => this.setState({ mobileNumber: val })} value={this.state.mobileNumber} maxLength={this.state.mobileNumber.charAt(0) == 0 ? 11 : 10}></TextInput>
                 </Animated.View>
-              </Animatable.View>
+              </Animated.View>
             </TouchableOpacity>
 
             <TouchableOpacity style={[styles.button, { opacity: (this.disabledBtn() == 1 ? 0.7 : 1) }]} onPress={ this.checkLogin } disabled={this.disabledBtn() == 1 ? true : false}>
