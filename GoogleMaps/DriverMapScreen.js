@@ -13,8 +13,7 @@ import{ io } from 'socket.io-client';
 import * as Animatable from 'react-native-animatable';
 // import BackgroundGeolocation from '@mauron85/react-native-background-geolocation';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import RNAndroidLocationEnabler from 'react-native-android-location-enabler';
-
+import {isLocationEnabled, promptForEnableLocationIfNeeded} from 'react-native-android-location-enabler';
 import { Colors } from '../styles';
 import { Options } from '../config';
 import CustomStatusBar from '../components/CustomStatusBar';
@@ -26,6 +25,7 @@ import TodaysSummery from './TodaysSummery';
 import BatteryLowMessage from '../components/BatteryLowMessage';
 import AcceptRideRequestPanel from './AcceptRideRequestPanel';
 import TripControlScreen from './TripControlScreen';
+import * as RNAndroidLocationEnabler from "react-native-android-location-enabler";
 
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 const SCREEN_WIDTH = Dimensions.get('window').width;
@@ -89,8 +89,9 @@ export default class DriverMapScreen extends Component {
   }
 
   async componentDidMount() {
+    this.isLocationEnabled();
     this.unsubscribe = NetInfo.addEventListener(state => { this.setState({connectionType: state.type, isConnected: state.isConnected}); });
-    const { isConnected, type, isWifiEnabled } = await NetInfo.fetch();    
+    const { isConnected, type, isWifiEnabled } = await NetInfo.fetch();
     const enableHighAccuracy = (type === "wifi" || undefined) ? false : true;
     // this.isLocationEnabled();
     this.getUserData();
@@ -103,47 +104,47 @@ export default class DriverMapScreen extends Component {
       Geolocation.getCurrentPosition(
         position => {
           this.setState({
-            latitude: position.coords.latitude,
-            longitude: position.coords.longitude,
+            latitude: 32.90143162674829,
+            longitude:  13.22757128900913,
             markerHeading: position.coords.heading
           });
           // this.map.animateToRegion({ latitude: position.coords.latitude, longitude: position.coords.longitude, latitudeDelta: 0.0921, longitudeDelta: 0.0421 }, 10000);
         },
         error => geoErr(error),
-        { enableHighAccuracy: enableHighAccuracy, timeout: 20000, maximumAge: 1000 }
+        // { enableHighAccuracy: enableHighAccuracy, timeout: 20000, maximumAge: 1000 }
       );
 
 	    //enableHighAccuracy: true, get more accurate location
       this.watchId = Geolocation.watchPosition(
         position => {
           this.setState({
-            latitude: position.coords.latitude,
-            longitude: position.coords.longitude,
+            latitude: 32.90143162674829,
+            longitude:  13.22757128900913,
             markerHeading: position.coords.heading,
             accuracy: position.coords.accuracy,
             altitude: position.coords.altitude,
             altitudeAccuracy: position.coords.altitudeAccuracy,
             speed: position.coords.speed
           });
-          
+
           if(this.state.driverStatus) {
             axios.post(`${BASE_URL}/update-all-driver-route`, {
               email: this.state.email,
-              latitude: position.coords.latitude,
-              longitude: position.coords.longitude,
+              latitude: 32.90143162674829,
+              longitude:  13.22757128900913,
               marker_heading: position.coords.heading
             })
             .then((response) => {
-              if(response.data.code === 200){ 
-                console.log('update-all-driver-route: ' + response.data.code); 
+              if(response.data.code === 200){
+                console.log('update-all-driver-route: ' + response.data.code);
               }
             });
           }
-          
+
           //add code for sending driver's current location to the rider
           if(this.state.driverStatus && this.state.tripNumber) {
             this.socket.emit('updateDriverCurrentLocation', {
-              tripNumber: this.state.tripNumber, 
+              tripNumber: this.state.tripNumber,
               latitude: position.coords.latitude,
               longitude: position.coords.longitude,
               markerHeading: position.coords.heading
@@ -152,7 +153,7 @@ export default class DriverMapScreen extends Component {
             if(this.state.pointCoords[0]) {
               let diff_in_meters = getLatLonDiffInMeters(this.state.latitude, this.state.longitude, this.state.pointCoords[0].latitude, this.state.pointCoords[0].longitude);
               console.log('this.state.pointCoords', this.state.pointCoords[0].latitude, diff_in_meters);
-  
+
               if(diff_in_meters <= 200) {
                // Alert.alert('Rider is in 200 meter', 'Rider is around 200 meters from your current location');
               } else if(diff_in_meters <= 50) {
@@ -162,7 +163,7 @@ export default class DriverMapScreen extends Component {
           }
         },
         error => geoErr(error),
-        { enableHighAccuracy: true, timeout: 20000, maximumAge: 2000, distanceFilter: 10 }
+        // { enableHighAccuracy: true, timeout: 20000, maximumAge: 2000, distanceFilter: 10 }
       );
     }
 
@@ -195,6 +196,251 @@ export default class DriverMapScreen extends Component {
       }
     });
     */
+  }
+  // async componentDidMount() {
+  //   this.unsubscribe = NetInfo.addEventListener(state => {
+  //     this.setState({ connectionType: state.type, isConnected: state.isConnected });
+  //   });
+  //
+  //   const { isConnected, type, isWifiEnabled } = await NetInfo.fetch();
+  //   const enableHighAccuracy = (type === "wifi" || undefined) ? false : true;
+  //
+  //   // Function to handle location permission request for both iOS and Android
+  //   const requestLocationPermission = async () => {
+  //     if (Platform.OS === "ios") {
+  //       const { status } = await Geolocation.requestAuthorizationAsync();
+  //       return status === 'granted';
+  //     } else {
+  //       const { status } = await PermissionsAndroid.requestMultiple([
+  //         PermissionsAndroid.PERMISSIONS.ACCESS_COARSE_LOCATION,
+  //         PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+  //       ]);
+  //       return (
+  //           status[PermissionsAndroid.PERMISSIONS.ACCESS_COARSE_LOCATION] === 'granted' ||
+  //           status[PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION] === 'granted'
+  //       );
+  //     }
+  //   };
+  //
+  //   // Check and request location permission
+  //   let granted = await requestLocationPermission();
+  //   if (!granted) {
+  //     // Handle permission denial gracefully (optional)
+  //     console.warn('Location permission denied');
+  //     // You can show a user-friendly message here, e.g., using Alert or Toast
+  //     // Alert.alert('Location Permission Required', 'This feature requires location access. Please enable location in your settings.');
+  //     return; // Exit if permission is denied
+  //   }
+  //
+  //   this.getUserData();
+  //
+  //   Geolocation.getCurrentPosition(
+  //       position => {
+  //         this.setState({
+  //           latitude: position.coords.latitude,
+  //           longitude: position.coords.longitude,
+  //           markerHeading: position.coords.heading
+  //         });
+  //         // this.map.animateToRegion(...); (assuming you have map logic)
+  //       },
+  //       error => geoErr(error),
+  //       { enableHighAccuracy: enableHighAccuracy, timeout: 20000, maximumAge: 1000 }
+  //   );
+  //
+  //   this.watchId = Geolocation.watchPosition(
+  //       position => {
+  //         // Update location state and handle driver updates as before
+  //         // ... your existing code here ...
+  //       },
+  //       error => geoErr(error),
+  //       { enableHighAccuracy: true, timeout: 20000, maximumAge: 2000, distanceFilter: 10 }
+  //   );
+  //
+  //   /*
+  //   // BackgroundGeolocation logic can be implemented here similarly...
+  //   */
+  // }
+
+
+  checkLocationEnabled = (enableHighAccuracy) => {
+    if (Platform.OS === 'android') {
+      RNAndroidLocationEnabler.promptForEnableLocationIfNeeded({ interval: 10000, fastInterval: 5000 })
+          .then(data => {
+            this.getCurrentLocation(enableHighAccuracy);
+          })
+          .catch(err => {
+            Alert.alert(
+                'Location Services Disabled',
+                'Please enable location services to use this app.',
+                [
+                  { text: 'Enable', onPress: () => this.checkLocationEnabled(enableHighAccuracy) },
+                  { text: 'Cancel', onPress: () => console.log('Location services not enabled'), style: 'cancel' }
+                ],
+                { cancelable: false }
+            );
+          });
+    } else {
+      this.getCurrentLocation(enableHighAccuracy);
+    }
+  }
+
+  getCurrentLocation = (enableHighAccuracy) => {
+    Geolocation.getCurrentPosition(
+        position => {
+          this.setState({
+            latitude: 32.90143162674829,
+            longitude: 13.22757128900913,
+            markerHeading: position.coords.heading
+          });
+        },
+        error => geoErr(error),
+        { enableHighAccuracy, timeout: 20000, maximumAge: 1000 }
+    );
+
+    this.watchId = Geolocation.watchPosition(
+        position => {
+          this.setState({
+            latitude: 32.90143162674829,
+            longitude: 13.22757128900913,
+            markerHeading: position.coords.heading,
+            accuracy: position.coords.accuracy,
+            altitude: position.coords.altitude,
+            altitudeAccuracy: position.coords.altitudeAccuracy,
+            speed: position.coords.speed
+          });
+
+          if (this.state.driverStatus) {
+            axios.post(`${BASE_URL}/update-all-driver-route`, {
+              email: this.state.email,
+              latitude: 32.90143162674829,
+              longitude: 13.22757128900913,
+              marker_heading: position.coords.heading
+            })
+                .then((response) => {
+                  if (response.data.code === 200) {
+                    console.log('update-all-driver-route: ' + response.data.code);
+                  }
+                });
+          }
+
+          if (this.state.driverStatus && this.state.tripNumber) {
+            this.socket.emit('updateDriverCurrentLocation', {
+              tripNumber: this.state.tripNumber,
+              latitude: position.coords.latitude,
+              longitude: position.coords.longitude,
+              markerHeading: position.coords.heading
+            });
+
+            if (this.state.pointCoords[0]) {
+              let diff_in_meters = getLatLonDiffInMeters(this.state.latitude, this.state.longitude, this.state.pointCoords[0].latitude, this.state.pointCoords[0].longitude);
+              console.log('this.state.pointCoords', this.state.pointCoords[0].latitude, diff_in_meters);
+
+              if (diff_in_meters <= 200) {
+                // Alert.alert('Rider is in 200 meter', 'Rider is around 200 meters from your current location');
+              } else if (diff_in_meters <= 50) {
+                // Alert.alert('Rider is almost near', 'Rider is around 50 meters from your current location');
+              }
+            }
+          }
+        },
+        error => geoErr(error),
+        { enableHighAccuracy: true, timeout: 20000, maximumAge: 2000, distanceFilter: 10 }
+    );
+  }
+
+  checkLocationEnabled = (enableHighAccuracy) => {
+    if (Platform.OS === 'android') {
+      RNAndroidLocationEnabler.promptForEnableLocationIfNeeded({ interval: 10000, fastInterval: 5000 })
+          .then(data => {
+            this.getCurrentLocation(enableHighAccuracy);
+          })
+          .catch(err => {
+            Alert.alert(
+                'Location Services Disabled',
+                'Please enable location services to use this app.',
+                [
+                  { text: 'Enable', onPress: () => this.checkLocationEnabled(enableHighAccuracy) },
+                  { text: 'Cancel', onPress: () => console.log('Location services not enabled'), style: 'cancel' }
+                ],
+                { cancelable: false }
+            );
+          });
+    } else {
+      this.getCurrentLocation(enableHighAccuracy);
+    }
+  }
+
+  getCurrentLocation = (enableHighAccuracy) => {
+    Geolocation.getCurrentPosition(
+        position => {
+          this.setState({
+            latitude: 32.90143162674829,
+            longitude: 13.22757128900913,
+            markerHeading: position.coords.heading
+          });
+        },
+        error => geoErr(error),
+        { enableHighAccuracy, timeout: 20000, maximumAge: 1000 }
+    );
+
+    this.watchId = Geolocation.watchPosition(
+        position => {
+          this.setState({
+            latitude: 32.90143162674829,
+            longitude: 13.22757128900913,
+            markerHeading: position.coords.heading,
+            accuracy: position.coords.accuracy,
+            altitude: position.coords.altitude,
+            altitudeAccuracy: position.coords.altitudeAccuracy,
+            speed: position.coords.speed
+          });
+
+          if (this.state.driverStatus) {
+            axios.post(`${BASE_URL}/update-all-driver-route`, {
+              email: this.state.email,
+              latitude: 32.90143162674829,
+              longitude: 13.22757128900913,
+              marker_heading: position.coords.heading
+            })
+                .then((response) => {
+                  if (response.data.code === 200){
+                    console.log('update-all-driver-route: ' + response.data.code);
+                  }
+                });
+          }
+
+          if (this.state.driverStatus && this.state.tripNumber) {
+            this.socket.emit('updateDriverCurrentLocation', {
+              tripNumber: this.state.tripNumber,
+              latitude: position.coords.latitude,
+              longitude: position.coords.longitude,
+              markerHeading: position.coords.heading
+            });
+
+            if (this.state.pointCoords[0]) {
+              let diff_in_meters = getLatLonDiffInMeters(this.state.latitude, this.state.longitude, this.state.pointCoords[0].latitude, this.state.pointCoords[0].longitude);
+              console.log('this.state.pointCoords', this.state.pointCoords[0].latitude, diff_in_meters);
+
+              if (diff_in_meters <= 200) {
+                // Alert.alert('Rider is in 200 meter', 'Rider is around 200 meters from your current location');
+              } else if (diff_in_meters <= 50) {
+                // Alert.alert('Rider is almost near', 'Rider is around 50 meters from your current location');
+              }
+            }
+          }
+        },
+        error => geoErr(error),
+        { enableHighAccuracy: true, timeout: 20000, maximumAge: 2000, distanceFilter: 10 }
+    );
+  }
+
+  componentWillUnmount() {
+    if (this.watchId) {
+      Geolocation.clearWatch(this.watchId);
+    }
+    if (this.unsubscribe) {
+      this.unsubscribe();
+    }
   }
 
   componentWillUnmount() {
@@ -229,7 +475,7 @@ export default class DriverMapScreen extends Component {
 
   handleLocationEnable = () => {
     if (Platform.OS === 'android') {
-      RNAndroidLocationEnabler.promptForEnableLocationIfNeeded({interval: 10000, fastInterval: 5000})
+      promptForEnableLocationIfNeeded({interval: 10000, fastInterval: 5000})
       .then(data => {
         this.props.navigation.replace( 'DriverMapScreen', null, null );
       })

@@ -23,12 +23,12 @@ import com.reactcommunity.rndatetimepicker.RNDateTimePickerPackage;
 import com.reactnativecommunity.geolocation.GeolocationPackage;
 // @react-native-community/netinfo
 import com.reactnativecommunity.netinfo.NetInfoPackage;
-// @react-native-picker/picker
-import com.reactnativecommunity.picker.RNCPickerPackage;
 // @react-native-masked-view/masked-view
 import org.reactnative.maskedview.RNCMaskedViewPackage;
+// @react-native-picker/picker
+import com.reactnativecommunity.picker.RNCPickerPackage;
 // react-native-android-location-enabler
-import com.heanoria.library.reactnative.locationenabler.RNAndroidLocationEnablerPackage;
+import com.heanoria.library.reactnative.locationenabler.AndroidLocationEnablerPackage;
 // react-native-contacts
 import com.rt2zz.reactnativecontacts.ReactNativeContacts;
 // react-native-device-info
@@ -39,6 +39,8 @@ import com.imagepicker.ImagePickerPackage;
 import com.rnmaps.maps.MapsPackage;
 // react-native-pager-view
 import com.reactnativepagerview.PagerViewPackage;
+// react-native-permissions
+import com.zoontek.rnpermissions.RNPermissionsPackage;
 // react-native-push-notification
 import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
 // react-native-reanimated
@@ -106,14 +108,15 @@ public class PackageList {
       new RNDateTimePickerPackage(),
       new GeolocationPackage(),
       new NetInfoPackage(),
-      new RNCPickerPackage(),
       new RNCMaskedViewPackage(),
-      new RNAndroidLocationEnablerPackage(),
+      new RNCPickerPackage(),
+      new AndroidLocationEnablerPackage(),
       new ReactNativeContacts(),
       new RNDeviceInfo(),
       new ImagePickerPackage(),
       new MapsPackage(),
       new PagerViewPackage(),
+      new RNPermissionsPackage(),
       new ReactNativePushNotificationPackage(),
       new ReanimatedPackage(),
       new SafeAreaContextPackage(),

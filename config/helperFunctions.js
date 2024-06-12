@@ -19,20 +19,25 @@ const checkAndroidPermissions = async () => {
             PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION, {
                 title: "Uder App",
                 message: "Uder App needs to use your location to show routes and search for a ride",
-                buttonNeutral: "Ask Me Later", buttonNegative: "Cancel", buttonPositive: "OK"
+                buttonNeutral: "Ask Me Later",
+                buttonNegative: "Cancel",
+                buttonPositive: "OK"
             }
         );
 
         if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-            return true;
             console.log("You can use the geolocation");
+            return true;
         } else {
-            return false;
             console.log("Geolocation permission denied");
+            return false;
         }
-    } 
-    catch (err) { console.warn(err); }
+    } catch (err) {
+        console.warn(err);
+        return false;
+    }
 }
+
 
 const calculateFare = (baseFare, timeRate, time,  distanceRate, distance, surge) => {
     const distanceInKm = distance * 0.001; /*1KM 1000 Meter --  1÷1000 */
